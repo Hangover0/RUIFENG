@@ -1,0 +1,150 @@
+@charset "UTF-8";
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
+.content h1{
+    padding: 40px 0;
+    text-align: center;
+    font-weight: lighter;
+    color: #662b0b;
+}
+
+
+
+
+
+.box{
+    width: 65%;
+    margin: 0 auto;
+}
+.box .left{
+    width: 60%;
+}
+.box .left .text{
+    color: #8b4513;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+.box .left .title-about{
+    font-weight: lighter;
+    color: #84919f;
+}
+.box .left h3{
+    color: #662b0b;
+    font-weight: lighter;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+.box .left .title{
+    color: #662b0b;
+    margin: 10px;
+}
+
+
+
+
+.box .right{
+    width: 40%;
+}
+.box .right .biu{
+    width: 100%;
+}
+.box .right .biu img{
+    width: 100%;
+}
+.box .right .ability h2{
+    color: #662b0b;
+    font-weight: lighter;
+    font-size: 1.5em;
+    margin: 25px 0;
+}
+.box .right .ability p{
+    width: 100%;
+    height: 45px;
+    background-color: #008800;
+    margin-bottom: 5px;
+    line-height: 45px;
+}
+.right .ability p img{
+    vertical-align: middle;
+    padding-right: 15px;
+    padding-left: 5px;
+}
+
+
+.team{
+    width: 60%;
+    margin: 30px auto;
+}
+.team h1{
+    text-align: center;
+    font-weight: lighter;
+    color: #662b0b;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+
+.actor{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.wrap, .img, .mask, .border {
+    width:  200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.wrap {
+    width: 30%;
+    position: relative;
+    display: block;
+}
+.img {
+    background:url("../images/team-1.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+.mask, .border {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.mask {
+    line-height: 50px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0);
+    transition: all .5s ease-in;
+}
+.info {
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+.border {
+    border: 10px solid #9370db;
+    border-left-color: #ffa500;
+    border-top-color: #ffa500;
+    box-sizing: border-box;
+    transition: all .5s ease-in;
+}
+
+.wrap:hover .mask {
+    background: rgba(0, 0, 0, .5);
+    color: rgba(255, 255, 255, 1);
+}
+.wrap:hover .border {
+    transform: rotate(180deg);
+}
+.wrap h3{
+    transition: border-bottom .5s ease-in;
+}
+.wrap:hover h3{
+    border-bottom: 2px solid white;
+}

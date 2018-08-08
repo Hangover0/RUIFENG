@@ -1,0 +1,120 @@
+@charset "UTF-8";
+.main{
+    width: 65%;
+    margin: 0 auto;
+}
+.main h2{
+    text-align: center;
+    font-weight: lighter;
+    color: #662b0b;
+    padding: 40px 0;
+}
+.wrap{
+    width: 100%;
+}
+
+
+
+
+.wrap .blogs{
+    width: 80%;
+}
+.blogs .blogs-main{
+    width: 100%;
+    margin-bottom: 35px;
+}
+.blogs .blogs-main p{
+    font-size: 18px;
+    color: #8b4513;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+.blogs .blogs-main span{
+    font-size: 13px;
+    color: rgb(179,179,179);
+    line-height: 25px;
+}
+
+
+
+
+
+.blogs-main .content{
+    width: 100%;
+    margin-top: 5px;
+}
+.blogs-main .content .c-left{
+    width: 30%;
+}
+.content .c-left img{
+    width: 100%;
+}
+
+
+
+
+
+
+.blogs-main .content .c-right{
+    width: 68%;
+}
+.content .c-right p{
+    font-size: 15px;
+    line-height: 23px;
+    color: rgb(179,179,179);
+}
+.content .c-right a{
+    color: white;
+    padding: 3px 10px;
+    background: #008800;
+    border-radius: 5px;
+}
+
+
+
+.icon{
+    margin: 4px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.icon .biu li{
+    display: inline-block;
+    line-height: 50px;
+    padding-right: 90px;
+}
+.icon .biu li img{
+    padding-right: 10px;
+}
+
+
+.button ul li{
+    display: inline-block;
+    background: #008800;
+    border-radius: 3px;
+    color: white;
+    padding: 3px 10px;
+    margin: 0px 20px 20px 0px;
+}
+.button ul li:hover{
+    background: #9880dc;
+}
+
+
+
+.main aside{
+    width: 10%;
+}
+.links li h3{
+    font-weight: lighter;
+    margin: 30px 0px 20px 0px;
+    color: #8b4513;
+    font-size: 1.5em;
+}
+.sublinks li a{
+    color: rgb(179,179,179);
+    line-height: 25px;
+}
+.sublinks li a:hover{
+    text-decoration: underline;
+    color: #008800;
+}

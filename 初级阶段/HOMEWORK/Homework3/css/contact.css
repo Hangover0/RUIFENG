@@ -1,0 +1,75 @@
+@charset "UTF-8";
+main{
+    width: 65%;
+    margin: 0 auto;
+}
+main h1{
+    font-weight: lighter;
+    color: rgb(102,43,11);
+    text-align: center;
+    margin: 50px 0px 30px 0px;
+}
+main img{
+    width: 100%;
+}
+
+main .ct-wrap{
+    width: 100%;
+}
+.ct-wrap .left{
+    width: 50%;
+}
+.ct-wrap .left h3{
+    color: rgb(102,43,11);
+    font-weight: lighter;
+    margin: 15px 0px;
+    font-size: 1.17em;
+}
+[type="email"]{
+    height: 40px;
+    width: 280px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding-left: 8px;
+}
+[type="email"]::-webkit-input-placeholder{
+    color: #757575;
+    font-size: 18px;
+}
+.content textarea{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 8px;
+}
+.content textarea::-webkit-input-placeholder{
+    font-size: 18px;
+    border: black;
+    font-weight: lighter;
+}
+.left .biu{
+    background: #2e8a57;
+    width: 100px;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+
+.ct-wrap .right{
+    width: 40%;
+}
+.right h3{
+    color: rgb(102,43,11);
+    font-weight: lighter;
+    margin: 10px 0;
+    font-size: 1.17em;
+}
+.right p{
+    line-height: 35px;
+}
+.right p a:hover{
+    text-decoration: underline;
+}

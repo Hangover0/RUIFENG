@@ -1,0 +1,118 @@
+@charset "UTF-8";
+body{
+    background: black;
+}
+.boxxxxx{
+    width: 150px;
+    height: 200px;
+    margin: 100px auto;
+    perspective: 2000px;
+}
+.wrap{
+    width: 150px;
+    height: 200px;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.wrap img{
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wrap img:nth-child(1){
+    transform: rotateY(0deg) translateZ(230px);
+}
+.wrap img:nth-child(2){
+    transform: rotateY(40deg) translateZ(230px);
+}
+.wrap img:nth-child(3){
+    transform: rotateY(80deg) translateZ(230px);
+}
+.wrap img:nth-child(4){
+    transform: rotateY(120deg) translateZ(230px);
+}
+.wrap img:nth-child(5){
+    transform: rotateY(160deg) translateZ(230px);
+}
+.wrap img:nth-child(6){
+    transform: rotateY(200deg) translateZ(230px);
+}
+.wrap img:nth-child(7){
+    transform: rotateY(240deg) translateZ(230px);
+}
+.wrap img:nth-child(8){
+    transform: rotateY(280deg) translateZ(230px);
+}
+.wrap img:nth-child(9){
+    transform: rotateY(320deg) translateZ(230px);
+}
+@keyframes rotate-animation {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(-360deg);}
+}
+
+.wrap {
+    animation: rotate-animation 10s linear infinite;
+}
+
+
+
+
+
+.content{
+    width: 200px;
+    height: 200px;
+    margin: 300px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(15deg) rotateY(30deg);
+}
+.box{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .7;
+}
+.box1{
+    background: orange;
+    transform: translateZ(100px);
+}
+.box2{
+    background: red;
+    transform: rotateX(180deg) translateZ(100px);
+}
+.box3{
+    background: green;
+    transform: rotateY(-90deg) translateZ(100px);
+}
+.box4{
+    background: orangered;
+    transform: rotateY(90deg) translateZ(100px);
+}
+.box5{
+    background: purple;
+    transform: rotateX(-90deg) translateZ(100px);
+}
+.box6{
+    background:blue;
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+@keyframes box {
+    0%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)}
+    100%{
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg)}
+}
+
+.content {
+    animation: box 5s linear alternate infinite;
+}
+
+
+
+
+
