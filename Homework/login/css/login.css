@@ -1,0 +1,54 @@
+@charset "UTF-8";
+.wrap{
+    width: 500px;
+    margin: 50px auto;
+}
+.wrap #title{
+    border-bottom: 1px solid #000000;
+    font: 26px/100px "Times New Roman";
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px #eeeeee;
+    text-align: center;
+}
+.container{
+    width: 60%;
+    margin: 50px auto;
+}
+.container .box{
+    margin: 15px 0;
+}
+.container .box label{
+    width: 20%;
+    height: 35px;
+    font-size: 16px;
+    line-height: 35px;
+}
+.container .box input{
+    width: 78%;
+    height: 35px;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 8px;
+    background: white;
+    border-width: 2px;
+    cursor: text;
+}
+#tips{
+    width: 80%;
+    margin-left: 20%;
+    font-size: 12px;
+}
+#btn{
+    width: 80%;
+    height: 40px;
+    margin: 20px 0 0 20%;
+    background: #000000;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    color: #ffffff;
+    letter-spacing: 3px;
+    cursor: pointer;
+    outline: none;
+    border: 0px;
+}

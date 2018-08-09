@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{ margin:0; padding:0; list-style:none;}
+    #box{ width:1240px; border:1px solid #000; height:500px; margin:30px auto; position:relative; overflow:hidden;}
+    #box ul{ position:absolute; left:0; top:0;}
+    #box ul li{ width:400px; height:300px; float:left; padding:5px;}
+</style>
+<script>
+    window.onload=function(){
+        var oBox=document.getElementById('box');
+        var oUl=oBox.children[0];
+        var aLi=oUl.children;
+        //复制一份内容
+        oUl.innerHTML+=oUl.innerHTML;
+        oUl.style.width=aLi.length*aLi[0].offsetWidth+'px';
+        setInterval(function(){
+            var l=oUl.offsetLeft+10;
+            if(l>=0){
+                l=-oUl.offsetWidth/2;
+            }
+            oUl.style.left=l+'px';
+        },100);
+    };
+</script>
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li><img src="./img/01.jpg" width="400" height="200"></li>
+        <li><img src="./img/02.jpg" width="400" height="200"></li>
+        <li><img src="./img/03.jpg" width="400" height="200"></li>
+        <li><img src="./img/04.jpg" width="400" height="200"></li>
+    </ul>
+</div>
+</body>
+</html>

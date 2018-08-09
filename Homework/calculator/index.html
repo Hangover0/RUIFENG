@@ -1,0 +1,125 @@
+<!DOCUMENT html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>计算器</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<table cellspacing="0" cellpadding="0">
+    <tr>
+        <td colspan="4">
+            <input type="text" id="txtnum" value="0"
+                   style="width:100%;height:100%;text-align:right;font-size:200%;background: #000000;color: #ffffff"/>
+        </td>
+    </tr>
+    <tr>
+        <td class="box1"><input type="button" value="AC" class="operator" onclick="txtnum.value = '';result = 0"></td>
+        <td class="box1"><input type="button" value="+/-" class="operator" onclick="plusMinus('+/-')"></td>
+        <td class="box1"><input type="button" value="%" class="operator" onclick="compute('%')"></td>
+        <td class="box1"><input type="button" value="÷" style="background: #f87c0e;color: #000000;border-right: 1px solid #000000" class="operator" onclick="compute('÷')"></td>
+    </tr>
+    <tr>
+        <td class="box1"><input type="button" value="7" class="number" onclick="num(7)"></td>
+        <td class="box1"><input type="button" value="8" class="number" onclick="num(8)"></td>
+        <td class="box1"><input type="button" value="9" class="number" onclick="num(9)"></td>
+        <td class="box1"><input type="button" value="×" style="background: #f87c0e;color: #000000;border-right: 1px solid #000000" class="operator" onclick="compute('×')"></td>
+    </tr>
+    <tr>
+        <td class="box1"><input type="button" value="4" class="number" onclick="num(4)"></td>
+        <td class="box1"><input type="button" value="5" class="number" onclick="num(5)"></td>
+        <td class="box1"><input type="button" value="6" class="number" onclick="num(6)"></td>
+        <td class="box1"><input type="button" value="—" style="background: #f87c0e;color: #000000;border-right: 1px solid #000000" class="operator" onclick="compute('—')"></td>
+    </tr>
+    <tr>
+        <td class="box1"><input type="button" value="1" class="number" onclick="num(1)"></td>
+        <td class="box1"><input type="button" value="2" class="number" onclick="num(2)"></td>
+        <td class="box1"><input type="button" value="3" class="number" onclick="num(3)"></td>
+        <td class="box1"><input type="button" value="+" style="background: #f87c0e;color: #000000;border-right: 1px solid #000000" class="operator" onclick="compute('+')"></td>
+    </tr>
+    <tr>
+        <td class="box1" colspan="2"><input type="button" value="0" class="number" onclick="num(0)"></td>
+        <td class="box1"><input type="button" value="." class="number" onclick="decimal()"></td>
+        <td class="box1"><input type="button" value="=" style="background: #f87c0e;color: #000000;border-right: 1px solid #000000" id="simpleEqu" onclick="compute('=')"></td>
+    </tr>
+</table>
+<script>
+    //全局变量
+    var Boo = false;  //判断是否按下按钮
+    var result = 0;   //记录计算的结果
+    var ope;          //判断运算符
+
+
+
+    //获取DOM元素
+    function getEl(x) {
+        return document.getElementById(x);
+    }
+
+
+    //判断"."
+    function decimal() {
+        var txt = getEl("txtnum");
+        if(Boo){
+            txt.value = "0.";
+        }else {
+            if(txt.value.indexOf(".") == -1){
+                txt.value += ".";
+            }
+        }
+        Boo = false;
+    }
+
+
+    //获取数字
+    function num(Num) {
+        var txt = getEl("txtnum");
+        if(Boo){
+            txt.value = Num;
+            Boo = false;
+        }else{
+            if(txt.value == "0"){
+                txt.value = Num;
+            }else{
+                txt.value += Num;
+            }
+        }
+    }
+
+
+    //对获取的数字进行运算
+    function compute(op) {
+        var onum = getEl("txtnum").value;
+        if(onum == ""){
+            num = 0;
+        }
+        Boo = true;
+        switch (ope){
+            case "+":{result += parseFloat(onum);}break;
+            case "-":{result -= parseFloat(onum);}break;
+            case "×":{result *= parseFloat(onum);}break;
+            case "÷":{result /= parseFloat(onum);}break;
+            case "=":{result = parseFloat(onum);}break;
+            case "%":{result %= onum;}break;
+
+            default:{result = parseFloat(onum)}
+        }
+        getEl("txtnum").value = result;
+        ope = op;
+    }
+
+
+    //判断正负号
+    function plusMinus() {
+        var onum = getEl('txtnum').value;
+        if(onum == ""){
+            alert("数据不能为空！")
+        }else {
+            getEl('txtnum').value *= -1;
+        }
+    }
+</script>
+</body>
+</html>

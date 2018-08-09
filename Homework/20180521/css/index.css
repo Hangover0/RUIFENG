@@ -1,0 +1,166 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearFix{
+    zoom: 1;
+}
+.clearFix:after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+ul{
+    list-style: none;
+}
+
+header{
+    margin: 15px 21px;
+    text-align: left;
+}
+.menu-list{
+    text-align: left;
+    padding-right: 10px;
+}
+.menu-list li {
+    display: inline-block;
+    color: #333333;
+    font-weight: 700;
+    line-height: 24px;
+    margin-left: 20px;
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+    position: relative;
+}
+.menu-list li:last-child{
+    background: #3388ff;
+    text-decoration: none;
+}
+.menu-list li:last-child a{
+    color: #ffffff;
+}
+.submenu-list{
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+}
+
+
+main{
+    margin-top: 200px;
+}
+.content-top{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.content-top a img{
+    width: 18%;
+    vertical-align: middle;
+    margin-bottom: 30px;
+}
+.content-down{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.content-down form{
+    position: relative;
+}
+.content-down form input{
+    cursor: text;
+    width: 500px;
+    height: 32px;
+    line-height: 32px;
+}
+.content-down form button{
+    width: 100px;
+    height: 36px;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border-bottom: 1px solid #2d78f4;
+    outline: none;
+    cursor: pointer;
+    border: 0px;
+    position: absolute;
+    left: 64%;
+}
+footer{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.ftimg{
+    margin-top: 350px;
+}
+.ftimg h5{
+    color: #666666;
+    font-weight: 700;
+    line-height: 23px;
+}
+.ftmune li{
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: underline;
+    line-height: 22px;
+    margin-left: 25px;
+    font-size: 12px;
+}
+.ftmune li a{
+    color: #999999;
+}
+
+small{
+    color: #999999;
+    line-height: 22px;
+    font-size: 12px;
+}
+small a{
+    color: #999999;
+    line-height: 22px;
+    font-size: 12px;
+}
+
+
+
+.icon{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+.icon ul li{
+    display: inline-block;
+}
+.icon ul li p{
+    width: 66px;
+    height: 70px;
+}
+.icon ul li h1{
+    height: 13px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 13px;
+    line-height: 1;
+    color: #999999;
+}
+.icon ul li:first-child p{
+    background: url("../images/ns_diff_color_v3_991d8b3.png") 198px 48%;
+}

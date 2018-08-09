@@ -1,0 +1,138 @@
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+.menulist{
+    width: 87%;
+    margin: 0 auto;
+}
+.menulist ul{
+    text-align: center;
+    margin: 20px 0px;
+}
+.menulist ul li {
+    display: inline-block;
+    padding: 5px 0px;
+    color: #333333;
+    cursor: pointer;
+    font-size: 16px;
+}
+.menulist ul li:first-child{
+    color: #898989;
+}
+.content{
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+}
+.box{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+h1{
+    font-size: 28px;
+    color: #333333;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 30px;
+}
+h2{
+    font-size: 12px;
+    color: #b3b3b3;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 5px;
+}
+hr{
+    margin:0 auto;
+    width: 40px;
+    color: #c6a04e;
+}
+.box section{
+    margin-top: 30px;
+    width: 49%;
+    display: inline-block;
+    overflow: hidden;
+}
+.box section img{
+    width: 100%;
+    height: 370px;
+}
+.box section p{
+    color: #333333;
+    font-size: 18px;
+    line-height: 60px;
+    cursor: pointer;
+}
+.box section p:hover{
+    color: #c6a04e;
+}
+.wrap{
+    width: 90%;
+    margin: 0 auto;
+}
+.wrap ul{
+    text-align: center;
+    margin: 30px 0px;
+}
+.wrap ul li{
+    display: inline-block;
+    color: #333333;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    padding: 4px 10px;
+}
+.wrap ul li:hover{
+    color: #c6a04e;
+}
+.wrap .infor{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.infor section{
+    width: 32%;
+    display: inline-block;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.infor .boximg{
+    width: 100%;
+    overflow: hidden;
+    transition: all .2s linear;
+    overflow: hidden;
+}
+.infor .boximg img{
+    vertical-align: middle;
+    width: 100%;
+    transition: all .2s linear;
+}
+.infor section a{
+    color: #333333;
+    font-size: 18px;
+    line-height: 30px;
+    cursor: pointer;
+    font-weight: normal;
+    display: inline-block;
+    margin-top: 10px;
+}
+.infor section a:hover {
+    color: #c6a04e;
+}
+.infor section p{
+    font-size: 12px;
+    color: #929292;
+    text-align: center;
+    line-height: 30px;
+}
+.infor .boximg:hover{
+    box-shadow: 0px 0px 15px 1px #898989;
+}
+.infor .boximg:hover img{
+    transform: scale(1.1, 1.1);
+}

@@ -1,0 +1,387 @@
+@charset "UTF-8";
+.content{
+    width: 100%;
+    min-width: 1100px;
+}
+.content .banner{
+    width: 100%;
+    height: 360px;
+    position: relative;
+    background: url("../images/1503904091.jpg")no-repeat center center;
+    background-size:cover;
+}
+.banner .text{
+    box-sizing: border-box;
+    width: 540px;
+    height: 200px;
+    color: white;
+    background: #d07e30;
+    opacity: .9;
+    padding: 50px 60px;
+    position: absolute;
+    top: 80px;
+    left: 350px;
+}
+.banner .text h3{
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+.banner .text p{
+    font-size: 12px;
+    line-height: 20px;
+}
+.banner .list{
+    position: absolute;
+    top: 320px;
+    left: 50%;
+}
+.banner .list li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background: white;
+    display: inline-block;
+}
+.banner .list li:first-child{
+    background: orange;
+}
+
+
+.wrapper{
+    width: 100%;
+    height: 839px;
+    margin: 0 auto;
+    background: url("../images/bck03.jpg")no-repeat center center;
+    background-size: cover;
+}
+.menu{
+    width: 65%;
+    margin: 0 auto;
+}
+.menu .menu-list{
+    padding: 20px 0;
+
+}
+.menu .menu-list li{
+    font-size: 12px;
+    color: #666666;
+    font-weight: normal;
+    display: inline-block;
+}
+.menu .menu-list li:hover:nth-child(2){
+    color: #0046aa;
+    cursor: pointer;
+}
+
+
+
+.wrapper .box{
+    width: 65%;
+    height: 600px;
+    margin: 0 auto;
+}
+.box .left{
+    width: 75%;
+    height: 600px;
+}
+.box .left .top{
+    width: 100%;
+    height: 340px;
+    margin-bottom: 10px;
+}
+.left .top .one{
+    width: 70%;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+}
+.left .top .one a img{
+    width: 100%;
+    vertical-align: middle;
+    transition: all .25s linear;
+}
+.left .top .one .des{
+    position: absolute;
+    top: 250px;
+    left: 380px;
+}
+.left .top .one .des{
+    text-align: right;
+}
+.left .top .one h3{
+    color: #f78f2c;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.left .top .one:hover img{
+    transform: scale(1.1,1.1);
+}
+.top .one .bo{
+    width: 643px;
+    height: 334px;
+    border: 3px solid #f78f2c;
+    transition: all .25s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.top .one:hover .bo{
+    opacity: .8;
+}
+
+
+
+
+
+
+
+
+.left .top .two{
+    width: 29%;
+    height:340px;
+}
+.left .top .two a img{
+    width: 100%;
+    height: 340px;
+    vertical-align: middle;
+    transition: all .25s linear;
+}
+.left .top .two{
+    overflow: hidden;
+    position: relative;
+}
+.left .top .two .des{
+    text-align: left;
+    position: absolute;
+    top: 35px;
+    left: 30px;
+}
+.left .top .two h3{
+    color: #f78f2c;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.left .top .two:hover img{
+    transform: scale(1.1,1.1);
+}
+.top .two .bo1{
+    width: 263px;
+    height: 333.5px;
+    border: 3px solid #f78f2c;
+    transition: all .25s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.top .two:hover .bo1{
+    opacity: .8;
+}
+
+
+
+
+
+
+
+
+
+.box .left .buttom{
+    width: 100%;
+    height: 240px;
+}
+.left .buttom .tree h3{
+    color: #f78f2c;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.left .buttom .tree{
+    width: 49.4%;
+    overflow: hidden;
+    position: relative;
+}
+.left .buttom .tree a img{
+    width: 100%;
+    vertical-align: middle;
+    transition: all .25s linear;
+}
+.left .buttom .tree .des p{
+    line-height: 24px;
+}
+.left .buttom .fl.tree .des{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+.left .buttom .fr.tree .des{
+    text-align: right;
+    position: absolute;
+    top: 30px;
+    left: 300px;
+}
+.left .buttom .tree:hover img{
+    transform: scale(1.1,1.1);
+}
+
+
+
+
+
+
+
+.box .right{
+    width: 24.2%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+.box .right .des{
+    text-align: right;
+    position: absolute;
+    top: 30px;
+    left: 80px;
+}
+.box .right .des h3{
+    color: #f78f2c;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.right a img{
+    width: 100%;
+    vertical-align: middle;
+    transition: all .25s linear;
+}
+.right:hover img{
+    transform: scale(1.1,1.1);
+}
+.right .bo1{
+    width: 293px;
+    height: 594px;
+    border: 3px solid #f78f2c;
+    transition: all .25s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.right:hover .bo1{
+    opacity: .8;
+}
+
+
+
+
+
+.biubiu{
+    width: 65%;
+    height: 130px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.biu{
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+.biu li{
+    width: 32.8%;
+    overflow: hidden;
+    position: relative;
+}
+.biu li img{
+    width: 100%;
+}
+.biu li p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    position: absolute;
+    top: 50%;
+    left: 300px;
+    transform: translateY(-50%);
+}
+.biu .ob{
+    width: 399px;
+    height: 124px;
+    border: 3px solid #f78f2c;
+    transition: all .25s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.biu li:hover .ob{
+    opacity: .8;
+}
+
+
+
+.foot{
+    width: 70%;
+    height: 90px;
+    margin: 0 auto;
+}
+.foot ul{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.foot ul li{
+    height: 60px;
+    width: 25%;
+    display: inline-block;
+    position: relative;
+}
+.foot ul li:not(:last-child){
+    border-right: 1px solid #adadad;
+}
+.foot ul li img{
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+.foot .wz{
+    position: absolute;
+    top: 0;
+    left: 160px;
+}
+.foot .wz h3{
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #333333;
+    margin-bottom: 3px;
+}
+.foot .wz a{
+    font-size: 12px;
+    color: #adadad;
+}
+.foot .wz a:hover{
+    color: #0046aa;
+}
+
+
+
+
+aside{
+    position: fixed;
+    top: 50%;
+    right: 0;
+}
+aside ul li{
+    box-sizing: border-box;
+    padding-top: 6px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 1px;
+    border: 1px solid #0046aa;
+}
+

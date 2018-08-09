@@ -1,0 +1,345 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+ul{
+    list-style: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearFix{
+    zoom:1;
+}
+.clearFix:after{
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+
+
+main{
+    min-width: 1000px;
+}
+
+
+.welcome{
+    height: 30px;
+    padding: 0px 100px;
+    border-bottom: 1px solid #dddddd;
+}
+.wel-des{
+    height: 30px;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+.wel-des h3{
+    color: #333333;
+    font-size: 14px;
+    font-weight: normal;
+    display: inline-block;
+    line-height: 30px;
+}
+.wel-des p{
+    color: #666666;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 30px;
+    display: inline-block;
+}
+.wel-tel li{
+    display: inline-block;
+    line-height: 30px;
+    padding-right: 10px;
+}
+.wel-tel li img{
+    vertical-align: middle;
+    height: 18px;
+    width: 22px;
+    padding-right: 5px;
+}
+.wel-tel li:nth-child(3) img{
+    height: 18px;
+    width:18px;
+}
+.wel-tel li a{
+    cursor: pointer;
+    font-size: 12px;
+}
+.wel-tel li:hover:not(:last-child) a{
+    color: #d4b07b;
+}
+.wel-tel li:last-child a{
+    font-weight: bolder;
+}
+.logo{
+    padding: 30px 100px 20px;
+}
+.logo img{
+    display: inline-block;
+}
+.logo .menu-list li{
+    display: inline-block;
+    text-align: center;
+    width: 98px;
+}
+.logo .menu-list li p{
+    font-size: 12px;
+    color: #414141;
+}
+.logo .menu-list li a{
+    display: inline-block;
+    cursor: pointer;
+    width: 98px;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.logo .menu-list li:hover a{
+    background: #ad824b;
+    color: #ffffff;
+}
+.logo .menu-list li:first-child a{
+    color: #ffffff;
+    background: #ad824b;
+}
+
+
+
+.fot-login{
+    height: 170px;
+    width: 100%;
+    background: url("../images/form.png") repeat;
+}
+.fot-left{
+    margin-left: 80px;
+}
+.fot-bottom li{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 15px;
+    position: relative;
+}
+.fot-bottom li:nth-child(2) .form{
+    display: block;
+}
+.fot-bottom li:nth-child(2) .phone{
+    margin-top: 15px;
+}
+[for="name"],[for="tel"]{
+    font-size: 16px;
+    padding: 20px 5px 0 0;
+    font-weight: bolder;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.fot-bottom .fon-form input{
+    height: 42px;
+    width: 240px;
+    line-height: 42px;
+    background: #444444;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #999999;
+    font-family: "微软雅黑";
+    outline: none;
+}
+.fot-bottom .bottom{
+    position: absolute;
+    top:64px;
+    left: 349px;
+}
+.fot-right a{
+    width: 79px;
+    height: 57px;
+    background: #999999;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.fot-right{
+    margin-top: 60px;
+    height: 57px;
+    margin-right: 70px;
+    border-left: 2px solid #4c4d51;
+    padding-left: 30px;
+}
+.fot-right a:first-child{
+     background: url("../images/xxx.png") 0px 114px;
+ }
+.fot-right a:first-child:hover{
+    background: url("../images/xxx.png") 0px 57px;
+}
+.fot-right a:nth-child(2){
+    background: url("../images/xxx.png") -92px 114px;
+}
+.fot-right a:nth-child(2):hover{
+    background: url("../images/xxx.png") -92px 57px;
+}
+.fot-right a:last-child{
+    background: url("../images/xxx.png") -177px 114px;
+}
+.fot-right a:last-child:hover{
+    background: url("../images/xxx.png") -177px 57px;
+}
+
+.address{
+    height: 610px;
+    width: 100%;
+    background: url("../images/a4e93ef915a5884da0d89bb316fdd0bd.jpg")no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.address-box{
+    position: absolute;
+    top: 160px;
+    right: 47px;
+}
+.address-des{
+    margin-bottom: 10px;
+}
+.address-des h1{
+    font-size: 20px;
+    color:#e5e5e5;
+    line-height:26px;
+    display: block;
+    margin-bottom: 5px;
+}
+.address-des span{
+    display: inline-block;
+}
+.address-des span:nth-child(2){
+    width: 90px;
+    height: 22px;
+    background: #396a92;
+    color: #ffffff;
+    padding-left: 3px;
+    line-height: 22px;
+}
+.address-des span:nth-child(3){
+    height: 16px;
+    background: #ffffff;
+    border: 1px solid #858585;
+    color: #222222;
+    padding: 2px 5px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+}
+.address-des span:last-child{
+    color: #b0b0b0;
+    margin-left: 5px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+
+.foot-nav{
+    width: 100%;
+    background: #050304;
+}
+.fn-left{
+    margin-left: 80px;
+    width: 22%;
+    margin-top: 35px;
+}
+.fn-left li img{
+    vertical-align: middle;
+}
+.fn-left li a{
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "微软雅黑";
+}
+.fn-left li:nth-child(3){
+    margin-bottom: 35px;
+}
+.fn-left li:last-child img{
+    margin-right: 15px;
+}
+.fn-right{
+    width: 60%;
+    height: 325px;
+    color: #ffffff;
+    padding-top: 30px;
+}
+.menu li{
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    cursor: pointer;
+    width: 130px;
+}
+.sub{
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.sub li a{
+    text-align: left;
+    font-size: 15px;
+    color: #c7c7c7;
+    line-height: 28px;
+    cursor: pointer;
+    font-family: "微软雅黑";
+    font-weight: normal;
+}
+
+
+
+.down{
+    width: 100%;
+    background: #92764e;
+}
+.down .down-img{
+    padding: 30px 0px;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+.down .copy {
+    margin-right: 20px;
+    width:60%;
+    margin-top: 30px;
+}
+.down .copy h3{
+    color: #fff2b7;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "微软雅黑";
+}
+.down .copy p{
+    color: #eeebd8;
+    font-size: 14px;
+}
+
+
+
+.gobtn{
+    width: 28px;
+    height: 64px;
+    background: url("../images/85E43D2E4F6AD4BC15098D75A0A3B7C2.png");
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+}
+.gobtn:hover{
+    background-position: -28px 0;
+}

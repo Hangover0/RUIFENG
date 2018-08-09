@@ -1,0 +1,70 @@
+.wrap{
+    width: 100%;
+}
+.banner {
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+.title{
+    width: 80%;
+    margin: 0 auto;
+}
+.title h1{
+    display: inline-block;
+    color: #4ac5b8;
+    font-weight: normal;
+    padding-left: 5px;
+    font-size: 24px;
+    line-height: 70px;
+    border-bottom: 1px solid #4ac5b8;
+    cursor: pointer;
+    width: 200px;
+}
+.title ul{
+    display: inline-block;
+}
+.title ul li{
+    display: inline-block;
+    line-height: 70px;
+    color: #797878;
+    font-size: 16px;
+}
+.box{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.box .des h2{
+    font-weight: normal;
+    font-size: 100%;
+    line-height: 46px;
+    color: #696969;
+}
+.box .des p{
+    line-height: 46px;
+    font-size: 12px;
+    color: #696969;
+}
+.boximg{
+    width: 100%;
+}
+.boximg img{
+    width: 100%;
+    vertical-align: middle;
+}
+.inp{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.inp input{
+    background:#f8800f;
+    border: 0px;
+    outline: none;
+}
+.inp input:hover{
+    background: rgba(248,128,15,.6);
+}

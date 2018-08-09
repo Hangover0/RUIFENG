@@ -1,0 +1,44 @@
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+.wrap{
+    width: 80%;
+    margin: 0 auto;
+}
+.wrap h1{
+    margin-left: 100px;
+    margin-bottom: 20px;
+    width: 200px;
+    text-align: center;
+    color: #4ac5b8;
+    font-weight: normal;
+    padding-left: 5px;
+    font-size: 24px;
+    line-height: 70px;
+    cursor: pointer;
+    border-bottom: 1px solid #4ac5b8;
+}
+.wrap section {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+}
+.wrap section p{
+    padding-top: 5px;
+    color: #333333;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+    margin: 30px 0px 20px;
+}
+.wrap section p:hover{
+    color: #ad824b;
+}
+.wrap section video{
+    width: 90%;
+    margin-left: 100px;
+}

@@ -1,0 +1,14 @@
+@charset "utf-8";
+.table{
+    margin-top: 20px;
+}
+.table thead{
+    background-color: #2396fd;
+    color: #ffffff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #ffffff;
+}
+.table-striped > tbody > tr:nth-of-type(even) {
+    background-color: #e7f2fd;
+}

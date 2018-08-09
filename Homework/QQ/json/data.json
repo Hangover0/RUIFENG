@@ -1,0 +1,77 @@
+{
+    "schoolmate":[{
+        "headimg":"../images/head.jpg",
+        "name":"vv",
+        "state":"[离线请留言]",
+        "signature":"只有远方  没有如果"
+    },
+    {
+        "headimg":"../images/head.jpg",
+        "name":"vv",
+        "state":"在线",
+        "signature":"只有远方  没有如果"
+    },
+    {
+        "headimg":"../images/head.jpg",
+        "name":"vv",
+        "state":"[离线请留言]",
+        "signature":"只有远方  没有如果"
+    },
+    {
+        "headimg":"../images/head.jpg",
+        "name":"vv",
+        "state":"[离线请留言]",
+        "signature":"只有远方  没有如果"
+    }],
+    "friends":[{
+        "headimg":"../images/head.jpg",
+        "name":"vv",
+        "state":"[离线请留言]",
+        "signature":"只有远方  没有如果"
+        },
+        {
+        "headimg":"../images/head.jpg",
+        "name":"vv",
+        "state":"[离线请留言]",
+        "signature":"只有远方  没有如果"
+        },
+        {
+        "headimg":"../images/head.jpg",
+        "name":"vv",
+        "state":"[离线请留言]",
+        "signature":"只有远方  没有如果"
+        },
+        {
+        "headimg":"../images/head.jpg",
+        "name":"vv",
+        "state":"[离线请留言]",
+        "signature":"只有远方  没有如果"
+        }
+    ],
+    "games":[{
+        "headimg":"../images/head.jpg",
+        "name":"vv",
+        "state":"[离线请留言]",
+        "signature":"只有远方  没有如果"
+    },
+    {
+        "headimg":"../images/head.jpg",
+        "name":"vv",
+        "state":"[离线请留言]",
+        "signature":"只有远方  没有如果"
+    },
+    {
+        "headimg":"../images/head.jpg",
+        "name":"vv",
+        "state":"[离线请留言]",
+        "signature":"只有远方  没有如果"
+    },
+    {
+        "headimg":"../images/head.jpg",
+        "name":"vv",
+        "state":"[离线请留言]",
+        "signature":"只有远方  没有如果"
+    }
+]
+
+}

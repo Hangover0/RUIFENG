@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>翻转菜单-综合练习</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            width: 400px;
+            height: 40px;
+            background-color: #3c3c3c;
+            color: white;
+            margin: 0 auto;
+            line-height: 50px;
+            margin-top: 100px;
+        }
+        .nav>li{
+            width: 120px;
+            line-height: 40px;
+            text-align: center;
+            box-sizing: border-box;
+            background-color: grey;
+            float: left;
+            margin-left: 10px;
+            position: relative;
+
+        }
+        ul li{
+            width: 80px;
+            height: 40px;
+            display: inline-block;
+        }
+        /*.sub{*/
+        /*display: none;*/
+        /*}*/
+        .sub{
+            left: 0;
+            top: 40px;
+        }
+        .sub li{
+            width: 120px;
+            height: 40px;
+            display: inline-block;
+            margin-top: 1px;
+            list-style: none;
+            background-color: rgba(0,0,0,0.7);
+            transform: rotateY(90deg);
+            transition: all 1s;
+            opacity: 0;
+        }
+        .nav>li:hover .sub li{
+            /*透明度*/
+            opacity: 1;
+        }
+
+
+
+
+        .nav>li:hover .sub li{
+            transform: none;
+        }
+        .nav>li:hover .sub li:nth-child(1) {
+            transition-delay: 0s;
+        }
+        .nav>li:hover .sub li:nth-child(2){
+            transition-delay: 0.2s;
+        }
+        .nav>li:hover .sub li:nth-child(3){
+            transition-delay: 0.4s;
+        }
+        .nav>li:hover .sub li:nth-child(4){
+            transition-delay: 0.6s;
+        }
+        .nav>li:hover .sub li:nth-child(5){
+            transition-delay: 0.8s;
+        }
+
+
+        .nav>li .sub li:nth-child(1) {
+            transition-delay: 0.8s;
+        }
+        .nav>li .sub li:nth-child(2){
+            transition-delay: 0.6s;
+        }
+        .nav>li .sub li:nth-child(3){
+            transition-delay: 0.4s;
+        }
+        .nav>li .sub li:nth-child(4){
+            transition-delay: 0.2s;
+        }
+        .nav>li .sub li:nth-child(5){
+            transition-delay: 0s;
+        }
+    </style>
+</head>
+<body>
+<ul class="nav">
+    <li>一级菜单
+        <ul class="sub">
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+        </ul>
+    </li>
+    <li>一级菜单
+        <ul class="sub">
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+        </ul>
+    </li>
+    <li>一级菜单
+        <ul class="sub">
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>

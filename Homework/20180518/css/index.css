@@ -1,0 +1,106 @@
+@charset "utf-8";
+/******** 样式初始化部分 ********/
+* {
+    box-sizing: border-box;
+}
+html,body {
+    margin: 0 auto;
+    font: 16px sans-serif;
+}
+body {
+    background-color: #e1e2e3;
+    overflow-x: hidden;
+}
+input,button {
+    font: inherit;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/******** 细节设置部分 ********/
+main {
+    width: 960px;
+    margin: 0 auto;
+}
+/* 搜索工具 */
+.search-tools {
+    font-size: 0;
+    margin: 10px 0;
+}
+.search-tools input, .search-tools button {
+    padding: 8px 6px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.search-tools input {
+    width: calc(100% - 96px);
+    border: 1px solid #abacaf;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.search-tools input:focus {
+    border-color: rgb(98, 101, 104);
+}
+.search-tools button {
+    width: 96px;
+    background-color: #3a3b3c;
+    border: 1px solid #19191a;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.search-tools button:hover {
+    background-color: #666869;
+    border: 1px solid #353538;
+}
+.search-tools button:active {
+    background-color: #3a3b3c;
+    border: 1px solid #19191a;
+}
+
+/* 数据显示容器 */
+.data-info {
+    overflow-x: auto;
+}
+.data-info table {
+    width: 100%;
+}
+.data-info table, .data-info table th, .data-info table td {
+    border: 1px solid #abacaf;
+    border-collapse: collapse;
+}
+.data-info table thead {
+    background-color: rgb(54, 52, 52);
+    color: #f1f3f9;
+}
+.data-info table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+.data-info table tbody tr:nth-child(even) {
+    background-color: #f1f2f3;
+}
+.data-info table th, .data-info table td {
+    padding: 6px;
+    white-space: nowrap;
+}
+.data-info table tr td:first-child {
+    width: 160px;
+}
+.data-info table .ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.data-info table td:nth-child(1) .ellipsis {
+    width: 194px;
+}
+.data-info table td:nth-child(2) .ellipsis {
+    width: 580px;
+}
+.data-info table td:nth-child(3) .ellipsis {
+    width: 140px;
+}
+

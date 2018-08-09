@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>本周生活消费数据图表</title>
+    <link rel="stylesheet" href="./static/plugin/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+</head>
+<body style="background: #eeeeee">
+    
+
+    <main class="container-fluid">
+		<!-- 表格 -->
+		<div class="row">
+			<div id="weekConsumption" class="table table-bordered table-responsive col-lg-12">
+				<div class="thead">
+                    <span></span>
+                    <span>食品酒水</span>
+                    <span>购物消费</span>
+                    <span>居家生活</span>
+                    <span>行车交通</span>
+                    <span>休闲娱乐</span>
+                    <span>人情费用</span>
+                    <span>金融保险</span>
+                    <span>药品医疗</span>
+                    <span>其它消费</span>
+                </div>
+				<div class="tbody"><!-- 异步通过JSON数据加载 --></div>
+				<div class="tfoot">
+                    <span>总计</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+		</div>
+
+		<!-- 图表 -->
+		<div class="charts row">
+			<div id="dataBar" class="col-lg-8"></div>
+			<div id="dataPie" class="col-lg-4"></div>
+		</div>
+	</main>
+
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/echarts/dist/echarts.min.js"></script>
+    <script src="./static/js/tool.js"></script>
+    <script src="./static/js/index.js"></script>
+</body>
+</html>

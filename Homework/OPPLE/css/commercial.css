@@ -1,0 +1,266 @@
+@charset "UTF-8";
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
+.content .banner{
+    width: 100%;
+    height: 360px;
+    background: url("../images/1512722766.jpg")no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.banner .menu-p{
+    position: absolute;
+    top: 330px;
+    left: 900px;
+}
+.banner .menu-p li{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    margin-right: 20px;
+}
+.banner .menu-p li:first-child{
+    background: orange;
+}
+
+
+
+
+
+
+
+
+
+.nav{
+    width: 65%;
+    margin: 0 auto;
+}
+.menu-list li{
+    margin: 20px 0;
+    font-size: 12px;
+    color: #666666;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+.slideshow{
+    width: 1200px;
+    margin: 0 auto;
+}
+.slideshow .text{
+    font-size: 24px;
+    color: #333333;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.photo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.photo .box{
+    width: 180px;
+    overflow: hidden;
+    position: relative;
+    transition: all .5s linear;
+}
+.photo .box:first-child{
+    width: 630px;
+}
+.photo .box img{
+    vertical-align: middle;
+}
+.photo:hover .box{
+    width: 180px;
+}
+.photo .box:hover{
+    width: 630px;
+}
+.photo .box:first-child .limask{
+    opacity: 0;
+}
+.photo .limask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    transition: all .25s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.photo:hover .box .limask{
+    opacity: 1;
+}
+.photo .box:hover .limask{
+    opacity: 0;
+}
+.font{
+    width: 285px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: all .25s linear;
+}
+.font h4{
+    font-size: 18px;
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+.box .font p{
+    opacity: 0;
+}
+.box:hover p{
+    opacity: 1;
+}
+.tup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .25s linear;
+}
+.box:hover .tup{
+    opacity: 1;
+}
+
+
+
+.wrap{
+    width: 63%;
+    margin: 0 auto;
+}
+.wrap h1{
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: normal;
+}
+.item{
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.item img{
+    vertical-align: middle;
+    transition: all .5s linear;
+}
+.item .mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    transition: all .25s linear;
+    background: linear-gradient(to top,black -40%,transparent);
+    opacity: 0;
+}
+.content-t .item:hover .mask{
+    opacity: 1;
+}
+.content-t .item:hover img{
+    /*缩放*/
+    transform: scale(1.1,1.1);
+}
+.content-t .item:hover:not(.qqq) .title{
+    display: block;
+}
+.des-infos{
+    width: 50%;
+    color: white;
+}
+.des-infos h3{
+    font-size: 30px;
+}
+.des-infos .title{
+    font-size: 14px;
+    line-height: 24px;
+    display: none;
+}
+.item .des-infos:not(.ttt){
+    position: absolute;
+    left: 35px;
+    bottom: 50px;
+}
+.des-infos .aaa{
+    display: block;
+}
+.item .des-infos.po{
+    text-align: center;
+    position: absolute;
+    left: 25%;
+    top: 37%;
+}
+.item .des-infos.so{
+    position: absolute;
+    left: 63%;
+    top: 43%;
+}
+.item .des-infos.to{
+    position: absolute;
+    left: 7%;
+    top: 37%;
+}
+
+
+
+
+
+
+
+
+
+.footer-icon{
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    height: 100px;
+}
+.footer-icon ul{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-icon ul li{
+    margin-top: 18px;
+    display: inline-block;
+    width: 33%;
+}
+.footer-icon ul li:not(:last-child){
+    border-right: 1px solid #e1e1e1;
+}
+.footer-icon ul li img{
+    vertical-align: middle;
+    margin-right: 30px;
+}
+.footer-icon ul li a{
+    color: black;
+}
+.footer-icon ul li a:hover{
+    color: #0046aa;
+}
+
+
+
+
+aside{
+    position: fixed;
+    top: 50%;
+    right: 0;
+}
+aside ul li{
+    box-sizing: border-box;
+    padding-top: 6px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 1px;
+    border: 1px solid #0046aa;
+}

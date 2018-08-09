@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.clearFix{
+    zoom:1;
+}
+.clearFix:after{
+    content: "";
+    display: block;
+    height: 0px;
+    visibility: hidden;
+    clear: both;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.wrap{
+    width: 500px;
+    margin: 50px auto;
+}
+.wrap .des{
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 1px solid #000000;
+    font:26px/100px "Times New Roman";
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px #eeeeee;
+    font-weight: normal;
+}
+.myform{
+    width: 60%;
+    margin: 50px auto;
+}
+.infor-box p{
+    margin: 15px 0px;
+}
+.infor-box label{
+    width: 20%;
+    height: 35px;
+    font-size: 16px;
+    line-height: 35px;
+}
+.infor-box input{
+    width: 78%;
+    height: 35px;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 8px;
+    background: white;
+    border-width: 2px;
+}
+.tips-box label{
+    font-size: 12px;
+    padding-left: 53px;
+}
+.tips-box a{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+}
+#button{
+    width: 80%;
+    height: 40px;
+    margin: 20px 0px 0px 40px;
+    background: black;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.tips-box label a {
+    padding-left: 53px;
+}
+.tips-box label a:hover{
+    text-decoration: underline;
+}
+.tips-box a:hover{
+    text-decoration: underline;
+}

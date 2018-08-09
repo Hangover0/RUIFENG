@@ -1,0 +1,56 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #dddddd;
+    font: normal 16px "微软雅黑";
+    padding-bottom: 50px;
+}
+
+/**** 表格部分 ****/
+.table {
+    min-width: 800px;
+}
+.table .thead, .table .tfoot {
+    width: 100%;
+    background-color: #383838;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+.table .tbody {
+    width: 100%;
+}
+.table .tbody .item{
+    font-size: 0px;
+    width: 100%;    
+    display: flex;
+    justify-content: space-between;
+    display: inline-block;
+}
+.table .tbody .item span{
+    display: inline-block;
+    width: 10%;
+    font-size: 12px;
+    color: #000000;
+    font-weight: normal;
+    padding: 8px 0px 8px 8px;
+}
+.table span {
+    width: 10%;
+    font-weight: normal;
+    border: 1px solid #ffffff;
+    padding: 8px 0px 8px 8px;
+    outline: none;
+}
+.table span:focus {
+    background-color: #f3f3f3;
+    color: #333333;
+}
+
+/**** 图表部分 ****/
+.charts > div {
+    height: 320px;
+}

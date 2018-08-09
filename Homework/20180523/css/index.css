@@ -1,0 +1,38 @@
+@charset "UTF-8";
+html,body{
+    margin: 0;
+    font: 16px sans-serif;
+}
+.img-group img{
+    width: 100%;
+    display: none;
+}
+.img-group img.show{
+    display: block;
+}
+
+
+.wrap{
+    position: relative;
+    width: 100%;
+}
+.disc{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.disc li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    display: inline-block;
+    margin-left: 10px;
+}
+.disc li:first-child{
+    background:#E2CEB7;
+}
+.disc .on:hover{
+    background:#E2CEB7;
+}

@@ -1,0 +1,39 @@
+@charset "UTF-8";
+*{
+    margin:0 auto;
+    padding:0;
+}
+table{
+    text-align: center;
+    height:500px;
+    width:400px;
+}
+.box1{
+    width:25%;
+    height:16%;
+}
+input{
+    width:100%;
+    height:106%;
+    font-size:150%;
+    border: 1px solid #000000;
+    border-right: 0px;
+}
+#title{
+    color: #ffffff;
+    font-size: 40px;
+    padding-right: 20px;
+    background: #000000;
+}
+
+
+@media screen and (min-width:375px) {
+    body{
+        width: 375px;
+        height: 667px;
+    }
+    table{
+        width: 100%;
+        height: 99.5%;
+    }
+}

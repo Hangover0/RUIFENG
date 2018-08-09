@@ -1,0 +1,260 @@
+@charset "UTF-8";
+main{
+    width: 100%;
+    min-width: 1200px;
+}
+.content{
+    width: 100%;
+}
+.banner{
+    width: 100%;
+    height: 360px;
+    background: url("../images/投资者关系.jpg")no-repeat center center;
+    background-size: cover;
+}
+.nav{
+    width: 65%;
+    margin: 0 auto;
+}
+.menu-list li{
+    margin: 20px 0;
+    font-size: 12px;
+    color: #666666;
+    display: inline-block;
+}
+.menu-list li:hover:nth-child(2){
+    color: #0046aa;
+    cursor: pointer;
+}
+
+
+.tuwen{
+    width: 65%;
+    margin: 0 auto;
+}
+.tuwen h2{
+    font-size: 30px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+.tuwen h3{
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.tuwen img{
+    padding-left: 220px;
+}
+
+
+
+
+.infor{
+    width: 100%;
+    height: 830px;
+    background: #eaeaea;
+    margin-top: 100px;
+}
+.top {
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+.top .des{
+    text-align: center;
+}
+.top a{
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 24px;
+    color: #0046aa;
+    width: 170px;
+}
+.top a:first-child{
+    padding-right: 20px;
+    border-right: 2px solid #b9b4b4;
+}
+
+.top a:last-child{
+    color: #333333;
+    padding-left: 20px;
+}
+.top a:hover:last-child{
+    color: #0046aa;
+}
+.top span img:last-child{
+    margin-left: 30px;
+}
+
+
+
+
+.wrap {
+    width: 65%;
+    margin: 0 auto;
+}
+.wrap ul li{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    background: #ffffff;
+    margin-bottom: 1px;
+    line-height: 100px;
+    padding: 0 50px;
+}
+.wrap ul li span:first-child{
+     font-size: 12px;
+     color: #6e6e6e;
+     padding-right: 20px;
+ }
+.wrap ul li span:nth-child(2){
+    font-size: 16px;
+}
+.wrap ul li .p1:first-child{
+    margin-right: 3px;
+}
+.wrap ul li .p1{
+    font-size: 14px;
+    color: #6e6e6e;
+    border: 2px solid #e1e1e1;
+    padding: 10px 20px 10px 40px;
+}
+.wrap ul li:hover{
+    background: #f5f5f5;
+}
+.wrap ul li:hover .p1{
+    background: #0046aa !important;
+    color: #ffffff;
+    border: 2px solid #0046aa;
+}
+.wrap .boxmore{
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+.sbox{
+    width: 250px;
+    height: 60px;
+    background: #0046aa;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translateY(-50%);
+}
+.wrap .sbox{
+    position: relative;
+    transition: all .5s linear;
+}
+.wrap .sbox img{
+    vertical-align: center;
+    padding-right: 20px;
+    position: absolute;
+    top: 16px;
+    left: 75px;
+    transition: all .5s linear;
+}
+.sbox .title1{
+    font-size: 14px;
+    color: #ffffff;
+    position: absolute;
+    top: -19px;
+    left: 124px;
+    transition: all .5s linear;
+}
+.sbox:hover img{
+    left: 79px;
+}
+.sbox:hover .title1{
+    left: 120px;
+}
+.p1{
+    position: relative;
+}
+.p1 img{
+    position: absolute;
+    top: 14px;
+    left: 15px;
+}
+.wrap ul li:hover span:nth-child(2){
+    color: #0046aa;
+}
+ .p1 .two2{
+    display: none;
+}
+.wrap li:hover .two2{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+.biubiu {
+    width: 65%;
+    margin: 0 auto;
+}
+.biubiu h2{
+    font-size: 30px;
+    color: #333333;
+    margin-top: 50px;
+}
+.biubiu img{
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+
+
+
+
+.foot{
+    width: 65%;
+    height: 90px;
+    margin: 0 auto;
+}
+.foot ul{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.foot ul li{
+    text-align: center;
+    font-size: 18px;
+    color: #333333;
+    line-height: 60px;
+    width: 33.3%;
+    display: inline-block;
+    cursor: pointer;
+}
+.foot ul li:not(:last-child){
+    border-right: 1px solid #e1e1e1;
+}
+.foot ul li span img{
+    vertical-align: middle;
+    padding-right: 20px;
+}
+.foot ul li:hover{
+    color: #0046aa;
+}
+
+
+
+
+aside{
+    position: fixed;
+    top: 50%;
+    right: 0;
+}
+aside ul li{
+    box-sizing: border-box;
+    padding-top: 6px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 1px;
+    border: 1px solid #0046aa;
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>作业</title>
+</head>
+<body>
+<main id="main">
+    <div class="wrap">
+        <p id="text1">战斗暴龙兽</p>
+    </div>
+    <div class="wrap">
+        <p id="text2">终极体</p>
+    </div>
+    <div class="wrap">
+        <p id="text3">战斗龙卷风</p>
+    </div>
+    <div class="wrap">
+        <label>宝贝:</label>
+        <p id="baby"></p>
+    </div>
+    <div class="wrap">
+        <label>形态:</label>
+        <p id="form"></p>
+    </div>
+    <div class="wrap">
+        <label>技能:</label>
+        <p id="skill"></p>
+    </div>
+    <div class="wrap">
+        <button id="btn" type="button">激活</button>
+    </div>
+</main>
+<iframe src="" frameborder="1">
+    <div id="ifr"></div>
+</iframe>
+<script>
+    setTimeout(function () {
+        var main = document.getElementById("ifr");
+        var parent = window.parent,
+            parentDoc = parent.document;
+        var parentmain = parentDoc.getElementById("main");
+
+        console.log(parentmain.getElementsByClassName("wrap")[4].textContent);
+        console.log(main);
+       main.innerHTML = `
+       <p>${parentmain.getElementsByClassName("wrap")[4].textContent}</p>;
+       `
+
+    },100);
+</script>
+</body>
+</html>

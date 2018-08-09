@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>作业</title>
+</head>
+<body>
+<div class="first">
+    <ul>
+        <li id="start">启动</li>
+        <li>状态：无</li>
+    </ul>
+</div>
+<div class="second">
+    <ul>
+        <li>苹果</li>
+        <li>梨子</li>
+        <li>香蕉</li>
+        <li>草莓</li>
+    </ul>
+</div>
+<script>
+    var start = document.getElementById("start");
+    start.onclick = function () {
+        start.nextElementSibling.textContent = "状态：启动中";
+        console.log(start.parentElement.parentElement.nextElementSibling.children[0].children);
+        var len = start.parentElement.parentElement.nextElementSibling.children[0].children.length;
+        var str = start.parentElement.parentElement.nextElementSibling.children[0].children;
+        for(var i = 0; i < len; i++){
+            str[i].style.color = "red";
+        }
+
+
+    }
+</script>
+</body>
+</html>

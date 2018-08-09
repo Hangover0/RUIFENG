@@ -1,0 +1,42 @@
+{
+    "infor":[{
+        "img":"../images/goods-01.jpg",
+        "des":"滑雪眼镜 012",
+        "price":"￥2800"
+    },
+    {
+        "img":"../images/goods-02.jpg",
+        "des":"滑雪眼镜 025",
+        "price":"￥2300"
+    },
+    {
+        "img":"../images/goods-03.jpg",
+        "des":"滑雪眼镜 042",
+        "price":"￥2100"
+    },{
+        "img":"../images/goods-04.jpg",
+        "des":"滑雪配件 037",
+        "price":"￥3200"
+    },
+    {
+        "img":"../images/goods-05.jpg",
+        "des":"滑雪配件 032",
+        "price":"￥3500"
+    },
+    {
+        "img":"../images/goods-06.jpg",
+        "des":"滑雪配件 036",
+        "price":"￥3100"
+    },
+    {
+        "img":"../images/goods-07.jpg",
+        "des":"滑雪板单板 028",
+        "price":"￥1800"
+    },
+    {
+        "img":"../images/goods-08.jpg",
+        "des":"滑雪眼睛 016",
+        "price":"￥5100"
+    }
+]
+}

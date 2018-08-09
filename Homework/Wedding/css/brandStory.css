@@ -1,0 +1,86 @@
+@charset "UTF-8";
+.content{
+    width: 75%;
+    margin:0 auto;
+}
+.content .conimg{
+    text-align: center;
+    margin: 20px 0px 30px;
+}
+.box{
+    width: 90%;
+    margin: 0 auto;
+}
+.box h1{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    color: #4d4d4d;
+    border-bottom: 5px solid #4d4d4d;
+    width: 190px;
+    font-weight: normal;
+}
+.box .list ul{
+    text-align: center;
+    margin: 10px 0px;
+}
+.box .list ul li{
+    display: inline-block;
+    color: #666666;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+}
+.box .list ul li:not(:last-child){
+    border-right: 2px solid #bcbcbc;
+    padding-right: 5px;
+}
+.box .list ul li:hover{
+    color: black;
+}
+.boxlist{
+    width: 62%;
+    margin: 0 auto;
+}
+.boxlist ul{
+    text-align: center;
+    font-size: 0px;
+}
+.boxlist ul li{
+    display: inline-block;
+    border: 1px solid #bcbcbc;
+    border-top: 7px solid #bcbcbc;
+    width: 24%;
+    padding: 20px 0px;
+}
+.boxlist ul li p{
+    font-size: 24px;
+    color: #bcbcbc;
+    text-align: center;
+    cursor: pointer;
+}
+.boxlist ul li:hover{
+    border-top: 7px solid #616161;
+}
+.wrap{
+    width: 75%;
+    margin: 0 auto;
+}
+.wrap img{
+    vertical-align: middle;
+}
+.wrapbox{
+    position: relative;
+}
+.wrapbox .des{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.wrapbox .des p{
+    font-size: 16px;
+    line-height: 30px;
+    color: #bfad96;
+}

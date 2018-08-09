@@ -1,0 +1,13 @@
+{
+  "name": "yarn-test",
+  "version": "1.0.0",
+  "main": "index,js",
+  "license": "ds",
+  "description": "hahah",
+  "repository": "ndis",
+  "author": "ds",
+  "private": null,
+  "devDependencies": {
+    "jquery": "^3.3.1"
+  }
+}
