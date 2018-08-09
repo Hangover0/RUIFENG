@@ -1,0 +1,266 @@
+// 大小缩略图
+.content {
+    width: 65%;
+    height: 636px;
+    margin: 0 auto;
+    .Big-ImgBox {
+        width: 86%;
+        height: 636px;
+        float: left;
+        background: darkgrey;
+         img {
+            width: 100%;
+            height: 100%;
+        }
+   }
+    .Small-ImgBox {
+        width: 11%;
+        height: 636px;
+        float: right;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+         img {
+            width: 136px;
+            height: 95px;
+            border-radius:10px;   
+            &:hover{
+
+            }
+        }
+        
+    }
+}
+
+// 组合产品
+.Group {
+    width: 65%;
+    height: 57px;
+    margin: 0 auto;
+    line-height: 57px;
+    border-bottom:1px solid #ccc; 
+        h1 {display: inline-block;}
+        span {
+            padding: 10px;
+            margin-left: 30px;
+        &:nth-child(2) {
+            border-right:1px solid #ccc;      
+           }
+        }
+}
+
+.special-box {
+    width: 65%;
+    height: 70px;
+    margin: 20px auto;
+    div{
+        vertical-align: middle;
+    }
+        .cost {
+            width: 207px;
+            height:  auto;
+            display: inline-block;
+            position: relative;
+            span{
+                &:first-child{
+                    font-size: 18px;
+                    vertical-align: top;
+                }
+                &:nth-child(2){
+                    font-size: 55px;
+                    font-weight: bold;
+                }
+                &:nth-child(3){
+                    font-size: 20px;
+                    vertical-align: bottom;
+                }
+                &:nth-child(4){
+                    width: 100%;
+                    height: 1px;
+                    border-bottom: 2px solid #eb1212;
+                    position: absolute;
+                    top: 32px;
+                    left: -6%;
+                    transform: rotate(17deg);
+                }
+            }
+        }
+        .sell {
+            width: 207px;
+            height: auto;
+            display: inline-block;
+            span{
+                &:first-child{
+                    font-size: 18px;
+                    vertical-align: top;
+                }
+                &:nth-child(2){
+                    color:#d8170e;
+                    font-size: 55px;
+                    font-weight: bold;
+                }
+                &:last-child{
+                    font-size: 20px;
+                    vertical-align: bottom;
+                }
+            }
+        }
+        .count {
+            width: 120px;
+            height: 55px;
+            line-height: 55px;
+            display: inline-block;   
+            margin-left: 100px;  
+            input {
+                width: 100%;
+                height: 100%;
+                padding-left: 50px;
+                box-sizing: border-box;
+                cursor: pointer;
+                font-size: 25px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+        }
+        .buy {
+            width: 207px;
+            height: 55px;
+            border-radius: 7px;
+            display: inline-block;
+            color: #fff;
+            font-size: 23px;
+            text-align: center;
+            line-height: 55px;
+            background-color: #db261f;
+            cursor: pointer;
+        }
+        .cart {
+            width: 207px;
+            height: 55px;
+            border-radius: 7px;
+            display: inline-block;
+            color: #ccc;
+            font-size: 23px;
+            text-align: center;
+            line-height: 55px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }     
+}
+
+
+h2{
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    border-bottom: 1px solid #cccccc;
+    font-size: 24px;
+    margin-bottom: 24px;
+    font-family: "微软雅黑";
+    color: #333333;
+}
+.purchase-price {
+    width: 65%;
+    height: 40px;
+    margin: 0 auto;
+        span:nth-child(2) {
+            font-size: 28px;
+            font-weight: bold;
+        }
+}
+
+.score {
+    width: 65%;
+    height: 40px;
+    margin: 0 auto;
+     a {padding-left: 30px;}
+     a:hover {color: orange; }
+    }
+
+    .repertory {
+        width: 65%;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+
+
+    // 商品规格
+    .bigbox{
+        width: 1260px;
+        margin: 50px auto;
+        .specification{
+            margin-bottom: 30px;
+            span{
+                line-height: 30px;
+                font-size: 18px;
+                color: #333333;
+                font-family: "微软雅黑";
+                display: inline-block;
+                margin-right: 265px;
+            }
+        }
+        .particulars{
+            margin-bottom: 30px;
+            .box{
+                width: 100%;
+                height: 300px;
+                background: #efefef;
+            }
+        }
+        .delivery{
+            margin-bottom: 30px;
+            p{
+                font-size: 18px;
+            }
+        }
+        .recommend{
+            margin-bottom: 30px;
+            .item-box{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .item{
+                    box-sizing: border-box;
+                    display: inline-block;
+                    width: 32%;
+                    .imgbox{
+                        width: 100%;
+                        height: 388px;
+                        img{
+                            width: 100%;
+                            height: 388px;
+                            vertical-align: middle;
+                        }
+                    }
+                    .des{
+                        line-height: 64px;
+                        height: 64px;
+                        color: #333333;
+                        text-align: center;
+                        font-family: "微软雅黑";
+                        .name{
+                            font-size: 18px;
+                        }
+                        .original{
+                            font-size: 22px;
+                            font-weight: bold;
+                            cursor: pointer;
+                            text-decoration: line-through;
+                        }
+                        .pri{
+                            font-size: 22px;
+                            font-weight: bold;
+                            cursor: pointer;
+                            color: #d8170e;
+                        }
+                    }
+                    &:hover{
+                        background: #ecf2e9;
+                        border: 3px solid #82c353;
+                        transition: all .5s linear;
+                    }
+                }
+            }
+        }
+    }

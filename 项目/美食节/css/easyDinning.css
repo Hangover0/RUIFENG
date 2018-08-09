@@ -1,0 +1,112 @@
+@charset "UTF-8";
+main{
+    width: 100%;
+    background: #fae8c8;
+}
+.wrap{
+    width: 990px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.wrap h1{
+    height: 120px;
+    line-height: 120px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    color: #222222;
+}
+.container{
+    margin-bottom: 30px;
+}
+.title{
+    height: 60px;
+    line-height: 60px;
+    background: #ffffff;
+    padding: 0px 15px;
+}
+.title h2{
+    color: #333333;
+    font-size: 18px;
+    font-weight: bold;
+}
+.title p{
+    line-height: 60px;
+    color: #999999;
+    font-size: 12px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 0px 15px 20px;
+}
+.box .item{
+    display: inline-block;
+    width: 16.5%;
+    height: 160px;
+    position: relative;
+}
+.item .time{
+    display: inline-block;
+    color: #999999;
+    padding-right: 10px;
+    line-height: 18px;
+    height: 18px;
+    font-size: 12px;
+}
+.item .head{
+    height: 40px;
+    margin-top: 98px;
+}
+.item .head img{
+    width: 40px;
+    height: 100%;
+}
+.item .head span{
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    color: #999999;
+    width: 86px;
+    font-size: 12px;
+}
+.item .head span:hover{
+    color: #ff3232;
+}
+.img{
+    height: 160px;
+    width: 100%;
+    overflow: hidden;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    transition: all .25s linear;
+}
+.img img:hover{
+    transform: scale(1.1,1.1);
+}
+.des{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+}
+.des p{
+    height: 32px;
+    line-height: 32px;
+    background: url("../images/black75.png");
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+.item:hover .des{
+    opacity: 1;
+}
+

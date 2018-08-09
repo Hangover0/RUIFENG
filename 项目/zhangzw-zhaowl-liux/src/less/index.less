@@ -1,0 +1,131 @@
+.main{
+    width: 100%;
+    h1{
+        width: 431px;
+        height: 35px;
+        margin: 34px auto 50px;
+        background: url(../images/sprites.png) 0px 0px;
+    };
+    .mainbox{
+        width: 1260px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .item{
+            display: inline-block;
+            width: 388px;
+            height: 388px;
+            margin-bottom: 30px;
+            z-index: 0;
+            &:first-child{
+                width: 814px;
+                height: 388px;
+                .swiper-container {
+                    width: 814px;
+                    height: 388px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            &:nth-child(4){
+                width: 388px;
+                height: 814px;
+                img{
+                    widows: 100%;
+                    height: 100%;
+                }
+            }
+            &:last-child{
+                width: 814px;
+                height: 388px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+#banner{
+    z-index: 0;
+    width:814px;
+    height:388px;
+    overflow:hidden;
+    position:relative;
+}
+.swiper-container {
+    width: 814px;
+    height: 388px;
+    position:absolute;
+}
+
+    
+.leftUp img{-webkit-animation-name:leftUp;animation-name:leftUp;}
+@-webkit-keyframes leftUp{
+    0%{transform:scale(1.1,1.1) translate(4.545%,4.545%); }
+    100%{transform:scale(1.1,1.1)  translate(-4.545%,-4.545%);}
+}
+@keyframes leftUp{
+    0%{transform:scale(1.1,1.1) translate(4.545%,4.545%);}
+    100%{transform:scale(1.1,1.1)  translate(-4.545%,-4.545%);}
+}
+
+.moveRight img{-webkit-animation-name:moveRight;animation-name:moveRight;}
+@-webkit-keyframes moveRight{
+    0%{transform:scale(1.1,1.1) translate(-4.545%,0); }
+    100%{transform:scale(1.1,1.1)  translate(4.545%,0);}
+}
+@keyframes moveRight{
+    0%{transform:scale(1.1,1.1) translate(-4.545%,0);}
+    100%{transform:scale(1.1,1.1)  translate(4.545%,0);}
+}
+
+.moveDown img{-webkit-animation-name:moveDown;animation-name:moveDown;}
+@-webkit-keyframes moveDown{
+    0%{transform:scale(1.1,1.1) translate(0,-4.545%); }
+    100%{transform:scale(1.1,1.1)  translate(0,4.545%);}
+}
+@keyframes moveDown{
+    0%{transform:scale(1.1,1.1) translate(0,-4.545%);}
+    100%{transform:scale(1.1,1.1)  translate(0,4.545%);}
+}
+
+.centerBig img{-webkit-animation-name:centerBig;animation-name:centerBig;}
+@-webkit-keyframes centerBig{
+    100%{transform:scale(1.1,1.1);}
+}
+@keyframes centerBig{
+    100%{transform:scale(1.1,1.1);}
+}
+
+.rightDownBig img{-webkit-animation-name:rightDownBig;animation-name:rightDownBig;}
+@-webkit-keyframes rightDownBig{
+    100%{transform:scale(1.1,1.1) translate(4%,4%);}
+}
+@keyframes rightDownBig{
+    100%{transform:scale(1.1,1.1) translate(4%,4%);}
+}
+.swiper-slide img{
+    animation-duration:5s;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration:5s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-fill-mode: forwards;
+}
+.swiper-pagination{
+    bottom:20px;
+    left:80px;
+}
+.swiper-pagination-bullet{
+    width:20px;
+    height:20px;
+    background:#fff;
+    margin:0 5px;
+}

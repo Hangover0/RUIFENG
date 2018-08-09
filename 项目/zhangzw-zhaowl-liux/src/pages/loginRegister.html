@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+</head>
+<body>
+    <header class="header"></header>
+    <main class="main">
+        <h2 class="title">登录</h2>
+        <form action="#" class="myForm">
+            <section class="input-box" data-msg="邮箱不合法">
+                <label for="">账&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号</label>
+                <input class="username" type="text" placeholder="请输入你的注册邮箱号">
+            </section>
+            <section class="input-box" data-msg="密码不合法">
+                <label for="">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+                <input class="password" type="password" placeholder="请输入密码">
+            </section>
+            <section class="input-box hidden code" data-msg="验证码不匹配">
+                <input type="text" class="verify" placeholder="请输入验证码">
+            </section>
+            <section  onselectstart="return false" class="validate-code hidden" data-msg="验证码不匹配！"></section>
+            <div class="info-box clearFix">
+                <div class="fl remember-box login">
+                    <span></span>
+                </div>
+                <div class="fr">
+                    <a class="go-register" href="javascript:;">没有账号？点击注册</a>
+                    <a class="go-login register hidden" href="javascript:;">返回登录</a>
+                </div>
+            </div>
+            <button class="login-register-btn" type="button">登陆</button>
+        </form>
+    </main>
+    <footer class="footer"></footer>
+    <script src="../plugin/bmob-min.js"></script>
+</body>
+</html>

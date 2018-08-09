@@ -1,0 +1,229 @@
+@charset "UTF-8";
+main{
+    width: 100%;
+    background: #fae8c8;
+}
+.wrap{
+    width: 990px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.wrap h1{
+    height: 120px;
+    line-height: 120px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+.box{
+    width: 100%;
+    padding: 10px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+.boxleft{
+    width: 25%;
+    position: relative;
+}
+.boxleft .list{
+    width: 100%;
+}
+.boxleft .list li{
+    width: 100%;
+    padding: 12px 59px;
+}
+.boxleft .list li p{
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.boxleft .list li h3{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    color: rgb(51,51,51);
+    font-weight: bold;
+    cursor: pointer;
+}
+.boxleft .list li:first-child p{
+    background: url("../images/menuicons.jpg") -13px 2967px;
+}
+.boxleft .list li:nth-child(2) p{
+    background: url("../images/menuicons.jpg") -13px 2367px;
+}
+.boxleft .list li:nth-child(3) p{
+    background: url("../images/menuicons.jpg") -13px 1768px;
+}
+.boxleft .list li:last-child p{
+    background: url("../images/menuicons.jpg") -13px 567px;
+}
+
+
+.boxleft .list li:first-child:hover p{
+    background: url("../images/menuicons.jpg") -13px 2666px;
+}
+.boxleft .list li:nth-child(2):hover p{
+    background: url("../images/menuicons.jpg") -13px 2068px;
+}
+.boxleft .list li:nth-child(3):hover p{
+    background: url("../images/menuicons.jpg") -13px 1466px;
+}
+.boxleft .list li:last-child:hover p{
+    background: url("../images/menuicons.jpg") -13px 264px;
+}
+
+
+.boxleft .list li:hover{
+    background: #ff3232;
+}
+.boxleft .list li:hover h3{
+    color: #ffffff;
+}
+.submenu-list{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+
+.discount{
+    width: 990px;
+    margin: 0 auto;
+}
+h2{
+    height: 100px;
+    line-height: 100px;
+    font-size: 18px;
+    color: #000000;
+    font-weight: normal;
+}
+.discount .disleft{
+    padding: 10px;
+    width: 49%;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+.disimg{
+    width: 50%;
+}
+.disdes{
+    width: 50%;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.disdes h1{
+    color: #333333;
+    line-height: 28px;
+    font-weight: normal;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.disdes h1:hover{
+    color: #ff3232;
+    text-decoration: underline;
+}
+.disdes p{
+    display: block;
+    vertical-align: top;
+    color: #999999;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+.disdes p span{
+    font-size: 14px;
+    color: #ff3232;
+    font-weight: bold;
+    line-height: 22px;
+}
+.disdes h4{
+    display: block;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    background: #ff3232;
+    line-height: 40px;
+    margin-top: 30px;
+}
+.disdes h4:hover{
+    background: #a8000f;
+}
+
+
+.recommend{
+    width: 990px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding-bottom: 90px;
+}
+.recommend .item:first-child{
+    width: 198px;
+    height: inherit;
+}
+.recmenu{
+    position: relative;
+    height: 394px;
+    background: #fafafa;
+    width: 201px;
+}
+.recmenu dt{
+    height: 28px;
+    padding: 20px 24px 16px;
+    font-size: 24px;
+    color: #333333;
+    line-height: 28px;
+}
+.recmenu dt span{
+    background: #999999;
+    height: 24px;
+    width: 4px;
+    margin: 3px 10px 1px 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+.recmenu dd{
+    color: #666666;
+    display: block;
+    text-indent: 14px;
+    cursor: pointer;
+    line-height: 24px;
+    height: 24px;
+    font-size: 14px;
+}
+.recmenu .recimg{
+    position: absolute;
+    top: 253px;
+    left: -35px;
+}
+.recmenu dd:hover{
+    background: #666666;
+    color: #ffffff;
+}
+
+.elec{
+    background: #ecefff;
+}
+.elec dd:hover{
+    background: #503f59;
+}
+.recmenu .elecimg{
+    position: absolute;
+    top: 228px;
+    left: -7px;
+}
+.flav{
+    background: #fff9e8;
+}
+.flav dd:hover{
+    background: #f1a101;
+}
+.recmenu .flavimg{
+    position: absolute;
+    top: 186px;
+    left: -79px;
+}

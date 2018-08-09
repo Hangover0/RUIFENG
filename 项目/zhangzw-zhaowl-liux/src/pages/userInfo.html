@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人信息</title>
+</head>
+<body>
+    <header class="header"></header>
+    <main>
+        <ul class="userInfo_list">
+            <li class="show">个人信息</li>
+            <li>我的订单</li>
+            <li>我的出售</li>
+            <li>个人账户</li>
+            <li>
+                系统信息
+                <i class="nums">0</i>
+            </li>
+        </ul>
+        <div class="userInfo-details showInfo" >
+            <form action="#" class="myForm">
+                <div class="user-box">
+                    <label>联系人</label>
+                    <p>
+                        <input type="text" placeholder="姓名" class="name bor">
+                        <input type="tel" placeholder="电话号码" class="tel bor">
+                    </p>
+                </div>
+                <div class="user-box">                          
+                    <label>性别</label>
+                    <p class="gender">                    
+                        <input type="radio" name="gender" id="male" checked>
+                        <label for="male">男</label>                    
+                        <input type="radio" name="gender" id="female"> 
+                        <label for="female">女</label>
+                    </p>                       
+                </div>
+                <div class="user-box">
+                    <label>出生年月</label>
+                    <p>
+                        <select class="user-box-year">
+                            <option value="0">2010</option>
+                            <option value="1">2009</option>
+                            <option value="2">2008</option>
+                            <option value="3">2007</option>
+                            <option value="4">...</option>
+                            <option value="4">1950</option>
+                        </select>
+                        <select class="user-box-month">
+                            <option value="0">1</option>
+                            <option value="1">2</option>
+                            <option value="2">3</option>
+                            <option value="3">...</option>
+                            <option value="4">12</option>
+                        </select>
+                        <select class="user-box-day">
+                            <option value="0">1</option>
+                            <option value="1">2</option>
+                            <option value="2">3</option>
+                            <option value="3">...</option>
+                            <option value="4">30</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="user-box">
+                    <label >家居偏好</label>
+                    <p>
+                        <select class="user-box-day">
+                            <option value="0">现代简约</option>
+                            <option value="1">恬淡田园</option>
+                            <option value="2">现代中式</option>
+                            <option value="3">东南亚风格</option>
+                            <option value="4">欧式古典</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="user-box">
+                    <label>教育程度</label>
+                    <p>
+                        <select class="user-box-day">
+                            <option value="0">初中</option>
+                            <option value="1">高中</option>
+                            <option value="2">大专</option>
+                            <option value="3">本科</option>
+                            <option value="4">硕士</option>
+                            <option value="4">博士</option>
+                            <option value="4">其他</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="user-box">
+                    <label>所在行业</label>
+                    <p>
+                        <select class="user-box-day">
+                            <option value="0">机构组织</option>
+                            <option value="1">农林牧鱼</option>
+                            <option value="2">医药卫生</option>
+                            <option value="3">建筑建材</option>
+                            <option value="4">石油化工</option>
+                            <option value="4">信息产业</option>
+                            <option value="4">其他</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="user-box">
+                    <label for="">所在地区</label>
+                    <p class="user-box-custom">
+                        <select class="user-box-day">
+                            <option value="0">四川</option>
+                            <option value="1">北京</option>
+                            <option value="2">上海</option>
+                            <option value="3">深圳</option>
+                            <option value="4">其他</option>
+                        </select>
+                        <select class="user-box-day">
+                            <option value="0">成都</option>
+                            <option value="1">绵阳</option>
+                            <option value="2">自贡</option>
+                            <option value="3">眉山</option>
+                            <option value="4">其他</option>
+                        </select>
+                        <select  class="user-box-day">
+                            <option value="0">锦江区</option>
+                            <option value="1">金牛区</option>
+                            <option value="2">武侯区</option>
+                            <option value="3">高新区</option>
+                            <option value="4">其他</option>
+                        </select>
+                        <select  class="user-box-day">
+                            <option value="0">一环</option>
+                            <option value="1">二环</option>
+                            <option value="2">三环</option>
+                            <option value="3">绕城</option>
+                            <option value="4">绕城外</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="text" placeholder="街道门牌号" class="tablet bor">
+                    </p>
+                </div> 
+                <button  type="button" class="sub-btn" disabled>
+                    提交
+                </button>                                              
+            </form>
+        </div>
+        <div class="userInfo-details">
+            <ul class="order">
+                <li>
+                    <div>订单消息</div>
+                    <div>金额</div>
+                    <div>下单时间</div>
+                    <div>送货时间</div>
+                    <div>状态</div>
+                    <div>操作</div>
+                </li>                
+            </ul>
+            <div class="return-btn">
+                返回
+            </div>
+        </div>
+        <div class="userInfo-details">
+            <div class="sellInfo">我要出售</div>
+            <div class="no-sell hid">
+                <h3>暂无出售项目</h3>
+                <p>操作须知：审核未通过的订单请查看系统消息修改重新上传；
+                    <br>
+                每个订单仅能使用一次降价申请功能，如有疑问请联系客服。
+                </p>
+                
+            </div>
+            <ul class="sell-list">
+                <li class="title">
+                    <div>订单信息</div>
+                    <div>售卖金额</div>
+                    <div>提交时间</div>
+                    <div>上架时间</div>
+                    <div>商品存储</div>
+                    <div>商品状态</div>
+                    <div>是否回款</div>
+                    <div>操作</div>             
+                </li>
+            </ul>            
+            <div class="depreciate hid">
+                <div class="deper-box">
+                    <div class="depreciate-list">
+                        <div class="depreciate-title">
+                            <span>降价申请</span>
+                            <span>(订单号：1234567890)</span>
+                        </div>
+                        <ul class="depre-detail">
+                            <li>
+                                <div>商品信息</div>
+                                <div>商品价格</div>
+                            </li>
+                            <li>
+                                <div class='img-box'>
+                                    <p><img src="../images/index-eg1.jpg" class="img"></p>
+                                    <p style='padding-left:16px;'>订单号</p>
+                                </div>
+                                <div class="price-box">
+                                    <p>
+                                        <span>售卖价格</span><span>￥1500.00</span>
+                                    </p>
+                                    <p>
+                                        <span>售卖佣金</span><span>40%</span>
+                                    </p>
+                                    <p>
+                                        <span>实际收入</span><span>￥900.00</span>
+                                    </p>
+                                </div>
+                                <div class="dis-price">
+                                    <p>
+                                        <span>修改价格</span>
+                                        <span>￥</span>
+                                        <input type="text">
+                                    </p>
+                                    <p>
+                                        <span>实际价格</span>
+                                       <span>￥600.00</span>
+                    
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class='img-box'>
+                                    <p><img src="../images/index-eg1.jpg" class="img"></p>
+                                    <p style='padding-left:16px;'>订单号</p>
+                                </div>
+                                <div class="price-box">
+                                    <p>
+                                        <span>售卖价格</span><span>￥1500.00</span>
+                                    </p>
+                                    <p>
+                                        <span>售卖佣金</span><span>40%</span>
+                                    </p>
+                                    <p>
+                                        <span>实际收入</span><span>￥900.00</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p style="line-height: 80px">商品已下单</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class='img-box'>
+                                    <p><img src="../images/index-eg1.jpg" class="img"></p>
+                                    <p style='padding-left:16px;'>订单号</p>
+                                </div>
+                                <div class="price-box">
+                                    <p>
+                                        <span>售卖价格</span><span>￥1500.00</span>
+                                    </p>
+                                    <p>
+                                        <span>售卖佣金</span><span>40%</span>
+                                    </p>
+                                    <p>
+                                        <span>实际收入</span><span>￥900.00</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p style="line-height: 80px">商品已出售</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="depreciate-btn">
+                    <p class="depreciate-sub">提交</p>
+                    <p class="depreciate-return">返回</p>
+                </div>
+            </div>
+        </div>
+        <div class="userInfo-details">
+            <div class="account">
+                <h1>个人账户</h1>
+                <div class="account-details">
+                    <div class="myaccount">
+                        <p>我的积分</p>
+                        <p class="account-line">
+                            <span>200</span>
+                            <span>分</span>
+                        </p>
+                    </div>
+                    <div class="account-info">您在户里网的任意消费都可获得积分，积分可直接抵扣商品金额</div>
+                    <div class="search-rule">
+                        <span>查看</span>
+                        <span class="rule">积分规则</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="userInfo-details">
+            <div class="messages">
+                <h3>系统消息</h3>
+                <ul class="message-list"></ul>
+            </div>
+            <div class="mess-del"><p>删除</p></div>    
+        </div>
+        <div class="abolish-btn button-box hid">
+            <div class="button-top">取消订单</div>
+            <div class="button-cen">
+                <p>您是否要取消该订单？成功取消之后货款将在3-7个
+                    <br>
+                工作日内返还至你的支付账号。 </p>              
+            </div>
+            <div class="button-bottom">
+                <span class="abolish-sure">确定</span>
+                <span class="abolish-not">取消</span>
+            </div>
+        </div>
+        <div class="del-btn button-box hid">
+            <div class="button-top">删除订单</div>
+            <div class="button-cen">
+                <p>您是否要删除该订单信息？删除后不再显示该订单。</p>              
+            </div>
+            <div class="button-bottom">
+                <span class="del-sure">确定</span>
+                <span class="del-not">取消</span>
+            </div>
+        </div>
+        <div class="no-tab button-box hid">
+           
+            <div class="button-cen">
+                <p>
+                    您还没有标记要删除的消息，请至少标记
+                    <br>
+                    条消息再执行该操作。
+                </p>              
+            </div>
+            <div class="button-bottom">
+                <span class="sure">确定</span>
+            </div>
+        </div>         
+    </main>       
+    <footer class="footer"></footer>
+</body>
+</html>

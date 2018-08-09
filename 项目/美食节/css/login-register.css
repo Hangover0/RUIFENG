@@ -1,0 +1,198 @@
+main{
+    width: 100%;
+    background: #fae8c8;
+    padding: 65px 0px;
+}
+.container{
+    width: 50%;
+    margin: 0 auto;
+    background: #ffffff;
+    position: relative;
+}
+.wrap{
+    text-align: center;
+    padding-top:30px;
+}
+.wrap h1{
+    display: inline-block;
+    line-height: 42px;
+    font-size: 28px;
+    color: #333333;
+    text-align: center;
+    padding: 0px 20px;
+    font-weight: normal;
+}
+.wrap img{
+    display: inline-block;
+}
+.box{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    padding: 30px 0px;
+    justify-content: space-between;
+}
+.Sprite{
+    width: 108px;
+    height: 108px;
+    display: inline-block;
+}
+.box .Sprite:first-child{
+    background: url("../images/nl_dsficon1.png") 0px 216px;
+}
+.box .Sprite:nth-child(2){
+    background: url("../images/nl_dsficon1.png") 216px 216px;
+}
+.box .Sprite:last-child{
+    background: url("../images/nl_dsficon1.png") 108px 216px;
+}
+.box .Sprite:first-child:hover{
+    background: url("../images/nl_dsficon1.png") 0px 324px;
+}
+.box .Sprite:nth-child(2):hover{
+    background: url("../images/nl_dsficon1.png") 216px 324px;
+}
+.box .Sprite:last-child:hover{
+    background: url("../images/nl_dsficon1.png") 108px 324px;
+}
+
+.des{
+    width: 100%;
+    text-align: center;
+}
+.des h1{
+    color: #333333;
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 66px;
+    height: 66px;
+    cursor: pointer;
+    font-weight: normal;
+}
+.des h1:hover{
+    color: red;
+    text-decoration: underline;
+}
+.des img{
+    margin: 30px 0px;
+}
+
+
+
+
+
+[name="myForm"]{
+    width: 35%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+
+[name="myForm"] .input-box {
+    width: 100%;
+    height: 40px;
+    margin: 25px auto;
+    position: relative;
+
+}
+
+[name="myForm"] .input-box::after {
+    display: none;
+    content: attr(data-msg);
+    font-size: 12px;
+    color: red;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+[name="myForm"] .error::after{
+    display: block;
+}
+
+[name="myForm"] input:not(.remember) {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    padding-left: 8px;
+    transition: border-color .25s linear;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+[name="myForm"] input:focus {
+    border-color: cornflowerblue;
+}
+
+[name="myForm"] .info-box {
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+[name="myForm"] .login-register-btn {
+    display: block;
+    width: 25%;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    margin: 0 auto;
+    background: #ec5541;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 8px;
+    cursor: pointer;
+    transition: background .25s linear;
+    border-radius: 5px;
+
+}
+
+[name="myForm"] .login-register-btn:hover {
+    background: rgb(179, 17, 17);
+}
+
+[name="myForm"] a {
+    color: #333;
+}
+[name="myForm"] a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+[name="myForm"] .validate-code {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    color: #000;
+    font-size: 28px;
+    letter-spacing: 7px;
+    line-height: 40px;
+    text-align: center;
+    background: url("../images/code.jpg");
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+[name="myForm"] .input-box:nth-child(5){
+    display: inline-block;
+    width: 160px;
+    margin-right: 15px;
+
+}
+
+
+[name="myForm"] .input-box:nth-child(5),
+[name="myForm"] .validate-code{
+    vertical-align: top;
+    margin-top: 0px;
+}
+
+
+[name="myForm"] .hidden {
+    display: none !important;
+}

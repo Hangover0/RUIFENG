@@ -1,0 +1,85 @@
+@charset "UTF-8";
+main{
+    width: 100%;
+    background: #fae8c8;
+    padding-bottom: 20px;
+}
+h1{
+    width: 990px;
+    margin: 0 auto;
+    height: 88px;
+    font-size: 18px;
+    color: #333333;
+    padding: 0px 5px;
+    line-height: 88px;
+    font-weight: normal;
+}
+h1 a{
+    color: #333333;
+}
+h1 a:hover{
+    color: #ff3232;
+}
+.wrap{
+    width: 990px;
+    margin: 0 auto;
+}
+.wrapleft{
+    width: 220px;
+    background: #f5f5f5;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.wrapleft p{
+    color: #333333;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.wrapleft .atten{
+    height: 44px;
+    line-height: 44px;
+    padding-left: 28px;
+    padding-top: 20px;
+    font-size: 12px;
+}
+.wrapleft .atten span{
+    height: 22px;
+    line-height: 22px;
+    width: 58px;
+    background: #ff3232;
+    padding: 5px 8px;
+}
+.wrapleft .atten span:first-child{
+    color: #ffffff;
+}
+.wrapleft .atten span:last-child{
+    background: #e4e4e4;
+}
+.wrapleft h4{
+    height: 24px;
+    line-height: 24px;
+    color: #666666;
+    font-size: 14px;
+    font-weight: normal;
+}
+.wrapright{
+    width: 770px;
+    padding: 20px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+.wrapright p{
+    font-size: 14px;
+    color: #666666;
+    line-height: 22px;
+    padding-bottom: 20px;
+}
+.wrapright img{
+    margin-bottom: 20px;
+}
+
+
+
+
