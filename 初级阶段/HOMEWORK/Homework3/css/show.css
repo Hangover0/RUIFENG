@@ -1,0 +1,35 @@
+
+@charset "UTF-8";
+
+main{
+    width: 70%;
+    margin: 0 auto;
+}
+.show-main{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.show-main h1{
+    margin-bottom: 30px;
+    text-align: center;
+    color: #662b0b;
+    font-weight: lighter;
+    font-size: 32px;
+}
+.show-img{
+    width: 100%;
+    text-align: center;
+}
+.p{
+    width: 100%;
+    height: 280px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.p img{
+    width: 32.5%;
+    border-radius: 20px;
+    overflow: hidden;
+    vertical-align: middle;
+}

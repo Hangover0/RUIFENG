@@ -1,0 +1,93 @@
+
+
+@charset "UTF-8";
+#t1:first-letter{
+    font-size: 32px;
+    color: pink;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    padding: 3px 10px;
+    text-shadow: 2px 2px 3px #000;
+}
+.title{
+    /*水平 垂直 模糊程度 阴影颜色*/
+    text-shadow: 3px 3px 2px #000;
+    color: yellow;
+}
+.title:hover:before{
+    content: attr(data-msg);
+    font-size: 20px;
+    color: pink;
+    text-decoration: underline;
+    text-shadow: 5px 5px 5px #000;
+}
+.title:hover:after{
+    content: attr(data-msg);
+    font-size: 20px;
+    color: pink;
+    text-decoration: underline;
+    text-shadow: 5px 5px 5px #000;
+}
+.t2:first-line{
+    font-size: 30px;
+}
+
+.menu-list{
+    list-style: none;
+    padding: 0;
+}
+.menu-list li{
+    width: 100px;
+    height: 35px;
+    background: cornsilk;
+    text-align: center;
+    /*当行高等于容器高度是，如果只有一行文本，则文本垂直居中*/
+    line-height: 35px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-list li:first-child,
+.menu-list li:last-child,
+.menu-list li:nth-child(3){
+    color: red;
+}
+
+.menu-list li:not(:nth-child(3)){
+    text-decoration: underline;
+}
+/*.menu-list li:before{*/
+    content: url("../images/logo.jpg");
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+[name="myForm"] > [type="radio"]:checked + label{
+    font-size: 26px;
+}
+
+body{
+    height: 2000px;
+
+}
+body::-webkit-scrollbar{
+    width: 18px;
+    background: pink;
+}
+body::-webkit-scrollbar-thumb:vertical {
+    border-radius: 5px;
+    /*设置拖拽条*/
+    background: dimgray;
+}
+
+
+[type="text"]{
+    /*修改光标颜色*/
+    caret-color:yellow;
+    padding-left: 8px;
+}
+/*设置占位符的颜色*/
+[type="text"]::-webkit-input-placeholder{
+    color: palevioletred;
+}

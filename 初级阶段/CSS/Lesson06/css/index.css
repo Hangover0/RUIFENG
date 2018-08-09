@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.Sprites{
+    width: 50px;
+    height: 50px;
+    margin:50px 50px;
+    background-image: url("../images/Sprites.jpg");
+    background-position: -41px 120px;
+}
+
+.Sprites:hover{
+    background-position: 7px 120px;
+}
+
+.sprites{
+    margin: 50px 50px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/Sprites.jpg");
+    background-position: -132px 125px;
+}
+.sprites:hover{
+    background-position: -84px 125px;
+}
+
+

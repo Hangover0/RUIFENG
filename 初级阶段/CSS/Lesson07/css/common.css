@@ -1,0 +1,33 @@
+
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+ul{list-style: none;}
+a{text-decoration: none;}
+/*清除浮动*/
+.clearFix{
+    /*兼容IE*/
+    zoom: 1;
+}
+.clearFix:after{
+    content: "";
+    display: block;
+    /*预防出现节点，确保没有占据实际空间*/
+    height: 0;
+    visibility: hidden;
+    /*清除浮动*/
+    clear: both;
+}
+
+
+
+
+
+
+
+

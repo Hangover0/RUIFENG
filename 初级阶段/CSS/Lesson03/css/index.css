@@ -1,0 +1,39 @@
+
+@charset "UTF-8";
+@font-face {
+    font-family: 'iconfont';  /* project id 616474 */
+    src: url('//at.alicdn.com/t/font_616474_qt87rjnam9tz9f6r.eot');
+    src: url('//at.alicdn.com/t/font_616474_qt87rjnam9tz9f6r.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_616474_qt87rjnam9tz9f6r.woff') format('woff'),
+    url('//at.alicdn.com/t/font_616474_qt87rjnam9tz9f6r.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_616474_qt87rjnam9tz9f6r.svg#iconfont') format('svg');
+}
+
+/*配置*/
+.iconfont{
+    font: normal normal 40px "iconfont";
+    color: blue;
+}
+
+
+
+
+.title{
+    color: pink;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px #000000;
+    word-spacing: 5px;
+}
+.box{
+    width: 500px;
+    height: 120px;
+    padding: 8px;
+    border: 1px solid#333;
+
+    /*处理多行文本溢出*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+}
