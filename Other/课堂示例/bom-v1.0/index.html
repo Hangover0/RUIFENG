@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOM基础</title>
+    <style>
+        body {
+            font: 20px sans-serif;
+        }
+        iframe {
+            display: none;
+        }
+        form div {
+            padding-top: 20px;
+        }
+        form div label,form div input {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        form div label {
+            width: 72px;
+            text-align: justify;
+            text-align-last:justify;
+            margin-right: 10px;
+        }
+        form div input {
+            font: 20px sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <iframe id="ifr" name="ifr1" src="ifr1.html"></iframe>
+        <form>
+            <div>
+                <label>用户名</label>
+                <input type="text" id="cur_userName">
+            </div>
+            <div>
+                <label>密码</label>
+                <input type="text" id="cur_pwd">
+            </div>
+        </form>
+    </main>
+
+    <script src="js/test.js"></script>
+</body>
+</html>

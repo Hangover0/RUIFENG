@@ -1,0 +1,138 @@
+@charset "utf-8";
+/**
+ * 功能：图片轮播
+ * 日期：2017-8-28
+**/
+
+/*************************************************/
+/* 样式初始化部分 */
+/*************************************************/
+* {
+	box-sizing: border-box;
+}
+html,body {
+	margin: 0;
+}
+
+/*************************************************/
+/* 元件样式定义 */
+/*************************************************/
+
+/*************************************************/
+/* 样式细节设置部分 */
+/*************************************************/
+/* 导航条 */
+nav {
+	width: 100%; height: 40px;
+	min-width: 1200px;
+	background-color: #5f5f5f;
+	border-bottom: 1px solid #393939;
+	text-align: center;
+	font: normal 20px/40px "微软雅黑";
+	color: #fff;
+}
+/* banner */
+.banner {
+	width: 100%;
+	min-width: 1200px;
+	background: #eee url(../img/banner-bg.jpg) no-repeat;
+	background-position: center center;
+}
+/* 轮播图片控件 */
+#carousel {
+	width: 1200px; height: 400px;
+	background-color: #aaa;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+/* 图片列表部分 */
+.imageList {
+	width: 100%; height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.imageList > img {
+	width: 100%; height: 100%;
+	position: absolute;
+	left: 0; top: 0;
+	opacity: 0;
+	transition: all 0.6s;
+}
+.imageList > img.show {
+	opacity: 1;
+}
+/* 控制点部分 */
+.pointList {
+	position: absolute;
+	left: 30px; bottom: 20px;
+	z-index: 1;
+	overflow: hidden;
+}
+.pointList > i {
+	width: 16px; height: 16px;
+	background-color: rgba(255, 255, 255, 0.2);
+	background-clip: content-box;
+	border: 2px solid rgba(255, 255, 255, 0.6);
+	border-radius: 50%;
+	display: block;
+	margin-right: 10px;
+	float: left;
+	cursor: pointer;
+	transition: all 0.6s;
+}
+.pointList > i.checked {
+	background-color: rgba(255, 255, 255, 9);
+}
+/* 翻页按钮 */
+.filp {
+	width: 100%; height: 72px;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	z-index: 1;
+}
+.filp > a {
+	width: 64px; height: 100%;
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-size: 80% 80%;
+	background-position: center center;
+	position: absolute;
+	cursor: pointer;
+	transition: all 0.15s;
+	opacity: 0.4;
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+}
+.filp > a:hover {
+	opacity: 0.6;
+}
+.filp > a:active {
+	opacity: 0.8;
+}
+.filp > a.toPrevImgBtn {
+	background-image: url(../img/btn-prev.svg);
+	left: -64px;
+}
+.filp > a.toNextImgBtn {
+	background-image: url(../img/btn-next.svg);
+	right: -64px;
+}
+#carousel:hover .toPrevImgBtn {
+	left: 0;
+}
+#carousel:hover .toNextImgBtn {
+	right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

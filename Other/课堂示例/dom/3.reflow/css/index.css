@@ -1,0 +1,42 @@
+@charset "utf-8";
+html,body {
+    margin: 0;
+    font: 20px sans-serif;
+}
+button {
+    font: inherit;
+    cursor: pointer;    
+}
+
+main {
+    width: 420px;
+    margin: 10px auto;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    overflow: hidden;
+}
+ul li {
+    padding: 12px 20px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+ul li:last-child {
+    border-bottom: none;
+}
+ul li button {
+    position: absolute;
+    right: 20px; top: 10px;
+}
+.btn-group {
+    margin-top: 20px;
+}
+.btn-group button {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}

@@ -1,0 +1,626 @@
+﻿1、下面的比较运算符中哪个是JavaScript不具有的（E）（30秒）
+A. ==
+B. ===
+C. >
+D. <
+E. ≠
+F. >=
+G. <=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2、阅读以下代码：
+// 定义一个函数
+function runFn() {
+    var ac = 0;
+    console.log(ac);
+    function runConsole() {
+        ac++
+        console.log(ac);
+    }
+    console.log(ac);
+}
+// 调用以上函数
+runFn();
+请问该程运行后的结果是（A）（60秒）
+A. 0 0
+B. 0 1 0
+C. 0 1 1
+D. 0 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3、阅读以下代码：
+// 定义一个函数（主）
+function runFn() {
+    var ac = 0
+    console.log(ac);
+    // 定义一个内部函数（次）
+    function runConsole() {
+        ac++
+        console.log(ac);
+    }
+    console.log(ac);
+    runConsole();
+}
+
+// 调用以上函数
+runFn();
+请问该程运行后的结果是（）（60秒）
+A. 0 0
+B. 0 1 0
+C. 0 1 1
+D. 0 0 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4、阅读以下代码：
+// 定义一个函数（主）
+function runFn() {
+    var ac = 0
+    console.log(ac);
+    // 定义一个内部函数（次）
+    function runConsole() {
+        ac++
+        console.log(ac);
+    }
+    runConsole();
+    console.log(ac);
+}
+
+// 调用以上函数
+runFn();
+请问该程运行后的结果是（）（60秒）
+A. 0 0
+B. 0 1 0
+C. 0 1 1
+D. 0 0 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5、阅读以下代码：
+function runFn() {
+    var ac = 0
+    console.log(ac);
+    runConsole();
+    console.log(ac);
+}
+// 定义一个外部函数（次）
+function runConsole() {
+    ac++
+    console.log(ac);
+}
+// 调用以上函数
+runFn();
+请问该程运行后的结果是（B）（60秒）
+A. 0 1 0
+B. 0 程序报错(Uncaught ReferenceError)
+C. 程序报错(Uncaught ReferenceError)
+D. 0 1 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6、阅读以下代码：
+function runFn() {
+    var ac = 0;
+    console.log(ac);
+    runConsole(ac);
+    console.log(ac);
+}
+// 定义一个外部函数（次）
+function runConsole(param) {
+    param++;
+    console.log(param);
+}
+// 调用以上函数
+runFn();
+请问该程运行后的结果是（）（60秒）
+A. 程序报错(Uncaught ReferenceError)
+B. 0 程序报错(Uncaught ReferenceError)
+C. 0 1 0
+D. 0 1 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7、在JavaScript中，使变量“a”每次参与运算都自增1的运算符写法为（），它属于（）运算符。使变量“a”和它的值“b”相加返回结果的运算符写法是（），它属于（）运算符。逻辑运算符（二元运算符）有三种，它们分别为“逻辑与”、“逻辑或”和“非”，它们在JS中的写法依次为（）、（）和（）（210秒）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8、在JavaScript中有（6）种数据值类型，（null）表示一个空对象，（NaN）表示不是一个数字，（undefined）表示未定义，它们在条件判断语句中会被转化为布尔值（false），而（Object 和 function )类型是一种引用型数据，它的值都是存在内存里面的。（120秒）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9、在下面程序“//”注释的后面写出当前行程序运行的“真实结果”,（120秒）；
+
+var i = 0,x = 1,y = 2,z;
+/* 第一段 */ 
+x < y;  //     true
+
+/* 第二段 */
+z = x + y;
+z;  //    3
+
+/* 第三段 */
+z = 0 || 2;
+z;  //     2
+
+/* 第四段 */
+z = 0 && 1;
+z;  //     0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10、有以下JavaScript程序：（每人120秒）
+
+/**** JavaScript代码部分 ****/
+var logicRes1 = "花" || ["草"] || { name: "树"} || (function() { return })();
+var logicRes2 = "花" && ["草"] && { name: "树"} && (function() { return "木"})();
+var logicRes3 = (null && undefined) || ("花" && 1) || ("草" && ["木"]);
+
+请回答以下问题。
+“logicRes1”的返回值为：     花
+typeof(logicRes1)的返回值为：   String
+“logicRes1”的布尔值类型为:     true
+
+“logicRes2”的返回值为：     木
+typeof(logicRes2)的返回值为：    String
+“logicRes2”的布尔值类型为:     true
+
+“logicRes3”的返回值为：       1
+typeof(logicRes3)的返回值为：   number
+“logicRes3”的布尔值类型为：    true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11、阅读以下代码：
+var arr = ["这是","一个","一位","非常","异常","迷人","动人","的","故事","美女"],
+    arr_len = arr.length,
+    res = "";
+    
+for(var i = 0; i < arr_len; i++) {
+    if(i == 1 || i == 4 || i == 6 || i == 8) {
+        continue;
+    }
+    res += arr[i];
+}
+console.log(res);
+
+以上程序运行后，在控制台会输出什么样的结果？（120秒）
+
+
+这是一位非常迷人的美女
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12、阅读以下代码：
+function printUserInfo(index) {
+	var objArr = [
+		{
+			name: "赵恒锐",
+			hobby: "撩妹"
+		},
+		{
+			name: "李塞寒",
+			hobby: "吃"
+		},
+		{
+			name: "张吉丹",
+			hobby: "加班"
+		},
+		{
+			name: "张志威",
+			hobby: "劈砖"
+		}
+	],
+	objArr_len = objArr.length;
+	for(var i = 0; i < objArr_len; i++) {
+		if(i == index) {
+			return "姓名：" + objArr[i].name + "，爱好：" + objArr[i].hobby + "。";
+		}
+	}
+}
+printUserInfo(2);
+请问上面函数运行后，返回的值是什么？（120秒）
+
+
+
+
+
+
+
+姓名：张吉丹，爱好：加班。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13、阅读以下代码：
+
+// 定义一个数组
+var arr = ["赵恒锐", "李塞寒", "张吉丹", "张志威", "赵文乐", "刘希", "彭丽", "陶泽英", "何仕林", "曾雪梅", "王兴明", "覃奋", "金星希", "吴宏宇", "李德森", "何晨霄", "刘金华", "温冲", "唐荣萍", "刘博", "杨洋", "张倩", "刘伟", "冯豪", "曾金婷", "李昊臻", "黄俊荣", "宋奇星", "刘浩"];
+var count = 0;
+while(count < arr.length) {
+    if(count%5 == 0) {
+        console.log(arr[count]);
+    }
+    count++;
+}
+
+
+
+赵恒锐 刘希
+ 王兴明
+ 何晨霄 杨洋 李昊臻
+

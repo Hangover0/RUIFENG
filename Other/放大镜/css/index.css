@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+
+.container{
+    border: 1px solid #eeeeee;
+    width: 700px;
+    height: 400px;
+    margin: 100px auto;
+    padding: 10px;
+    position: relative;
+}
+.small-box{
+    width: 260px;
+    border: 1px solid #eeeeee;
+    position: relative;
+}
+.small-box > .small-img{
+    width: 100%;
+    vertical-align: middle;
+}
+.small-box > .glass{
+    display: none;
+    width: 130px;
+    height: 112px;
+    border: 1px solid #eeeeee;
+    background: oldlace;
+    opacity: .65;
+    cursor: move;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.big-box{
+    display: none;
+    width: 390px;
+    height: 336px;
+    border: 1px solid #eeeeee;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.big-box > .big-img{
+    position: absolute;
+}
+
+
+
+
+

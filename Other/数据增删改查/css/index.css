@@ -1,0 +1,120 @@
+@charset "UTF-8";
+html,body {
+    height: 100%;
+}
+.big {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+.content {
+    width: 1200px;
+
+    margin: 0 auto;
+   padding: 50px;
+}
+fieldset {
+    width: 1200px;
+}
+#add {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background: rgba(0,117,0,0.84);
+    color: white;
+    border-radius: 2px;
+    text-align: center;
+    outline: none;
+    border: rgba(0,117,0,0.84);
+
+}
+table {
+    margin: 20px auto;
+    border:1px solid rgba(180,180,180,0.84);
+    outline: none;
+}
+table thead tr {
+    background: rgba(238,238,238,0.84);
+}
+table thead tr td{
+    width: 80px;
+    height: 40px;
+    border-right: 1px solid rgba(180,180,180,0.84);
+    text-align: center;
+    font-size: 14px;
+}
+table tbody tr td{
+    width: 80px;
+    height: 40px;
+    border-right: 1px solid rgba(180,180,180,0.84);
+    text-align: center;
+    font-size: 14px;
+}
+table thead tr .number {
+    width: 160px;
+}
+table thead tr .operate {
+    width: 200px;
+}
+table tbody p{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+}
+table tbody .compile {
+    background: rgba(250,157,18,0.84);
+    cursor: pointer;
+}
+table tbody .del {
+    background: rgba(49,250,116,0.84);
+    cursor: pointer;
+}
+
+#mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(127,127,127,0.84);
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+
+}
+.mask_box {
+    width: 300px;
+    margin: 200px auto;
+    background: white;
+
+
+}
+.mask_box .sub {
+    width: 200px;
+    padding: 30px 10px;
+    margin: 0 auto;
+}
+#mask input {
+    display: block;
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid rgba(180,180,180,0.84);
+    margin: 14px 0;
+}
+#mask button {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    background: rgba(0,117,0,0.84);
+    border-radius: 4px;
+    text-align: center;
+    outline: none;
+    border: 1px solid rgba(0,117,0,0.84);
+    color: white;
+    margin: 10px auto;
+
+}

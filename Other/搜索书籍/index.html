@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数据搜索</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <main>
+        <div class="search-tools">
+            <input id="searchVal" type="search" placeholder="请输入您要搜索的图书名称或者作者名称">
+            <button id="btnSearch" type="button">搜索</button>
+        </div>
+        <div class="data-info">
+            <table>
+                <thead>
+                    <tr>
+                        <th>书名</th>
+                        <th>描述</th>
+                        <th>书名</th>
+                    </tr>
+                </thead>
+                <tbody id="bookTbody">
+                    <!-- <tr>
+                        <td>书名</td>
+                        <td>
+                            <div class="ellipsis">描述</div>
+                        </td>
+                        <td>作者</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="data/book-info.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

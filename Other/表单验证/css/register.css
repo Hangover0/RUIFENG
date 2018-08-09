@@ -1,0 +1,133 @@
+@charset "utf-8";
+/**
+* 功能：用户注册样式设置
+**/
+body,html {
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+body {
+	padding-bottom: 120px;
+}
+/*********************************/
+/* 通用设置 */
+/*********************************/
+header {
+	height: 60px;
+	background-color: #585858;
+	text-align: center;
+	font-size: 28px;
+	color: #ffffff;
+	/* border: 1px solid #585858; */
+	overflow: hidden;
+}
+header div {
+	margin-top: 12px;
+}
+/* 行内块 */
+label {
+	display: inline-block;
+}
+/* 垂直居中 */
+label,input {
+	vertical-align: center;
+}
+/* IE盒子模型 */
+input,select,textarea,button {
+	box-sizing: border-box;
+}
+/* 手型按钮 */
+button,label[for] {
+	cursor: pointer;
+}
+/* 轮廓线消除 */
+input,select,textarea,button {
+	outline: none;
+}
+
+/*********************************/
+/* 详细设置 */
+/*********************************/
+form {
+	width: 468px;
+	margin: 0 auto;
+}
+form > div {
+	padding-top: 26px;
+	position: relative;
+}
+label {
+	width: 108px;
+	text-align: right;
+	font-size: 20px;
+}
+label[for] {
+	width: auto;
+}
+input,select {
+	width: 280px;
+	padding: 6px;
+	font-size: 18px;
+	color: #555;
+}
+input[type="radio"] {
+	width: 16px; height: 16px;
+}
+textarea {
+	width: 280px; height: 112px;
+	padding: 6px;
+	vertical-align: top;
+	font-size: 18px;
+	line-height: 25px;
+	position: relative;
+	top: -4px;
+}
+/* 统一表单视觉外观 */
+input,select,textarea {
+	border: 1px solid #999;
+	border-radius: 3px;
+}
+/* 统一表单视觉交互设计 */
+input:focus, select:focus, textarea:focus {
+	box-shadow: 0 0 10px rgba(95, 6, 6, 0.3);
+}
+input[type="radio"]:focus {
+	box-shadow: 0 0 0;
+}
+/* 按钮组 */
+.buttonGroup {
+	text-align: center;
+}
+.buttonGroup button {
+	width: 120px; height: 36px;
+	background-color: #340606;
+	border: 1px solid #4e0a0a;
+	border-radius: 3px;
+	font-size: 18px;
+	color: #fff;
+}
+.buttonGroup button:hover {
+	background-color: #580a0a;
+	border: 1px solid #800b0b;
+}
+.buttonGroup button:active {
+	background-color: #340606;
+	border: 1px solid #4e0a0a;
+}
+.buttonGroup button:last-child {
+	margin-left: 50px;
+}
+/* 错误信息 */
+.erroMesg {
+	margin: 0;
+	font-size: 16px;
+	color: #e00;
+	position: absolute;
+	left: 116px; top: 4px;
+}
+
+
+
+
+

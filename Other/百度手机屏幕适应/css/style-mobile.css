@@ -1,0 +1,118 @@
+@charset "utf-8";
+html,body {
+    margin: 0;
+    height: 100%;
+    font: 13px arial,sans-serif;
+}
+body {
+    padding-top: 35px;
+    background-color: #f8f8f8;
+    min-height: 420px;
+    overflow-y: auto;
+    position: relative;
+}
+
+header {
+    display: none;
+}
+
+main {
+    margin: 0 16px;
+}
+#lg img {
+    display: block;
+    margin: 0 auto;
+}
+#lg img:first-child {
+    display: none;
+}
+.user_input_search {
+    font-size: 0;
+    margin-top: 22px;
+    white-space: nowrap;
+}
+.user_input_search input, .user_input_search button {
+    padding: 8px;
+    height: 47px;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    vertical-align: middle;
+    outline: none;
+}
+.user_input_search input {
+    width: calc(100% - 82px);
+    border-color: #b6b6b6;
+    font-size: 16px;
+}
+.user_input_search button {
+    width: 82px;
+    background-color: #3385ff;
+    border-color: #3385ff;
+    font-size: 15px;
+    color: #ffffff;
+    cursor: pointer;
+} 
+.mobile-nav {
+    padding-top: 19px;
+    display: flex;
+    justify-content: space-between;
+}
+.ns-item {
+    text-decoration: none;
+    width: 16.66%;
+    float: left;
+    text-align: center;
+}
+.ns-item .ns-icon {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;
+}
+i.ns-focus, i.ns-news, i.ns-novel, i.ns-video, i.ns-life, i.ns-map, i.ns-tieba, i.ns-app, i.ns-image, i.ns-website, i.ns-extend, i.ns-music {
+    background: url('../img/nav-icon.png') no-repeat;
+    background-size: 22px auto;
+}
+i.ns-focus {
+    background-position: 0 -264px;
+}
+i.ns-news {
+    background-position: 0 -396px;
+}
+i.ns-novel {
+    background-position: 0 -330px;
+}
+i.ns-video {
+    background-position: 0 -462px;
+}
+i.ns-life {
+    background-position: 0 -418px;
+}
+i.ns-map {
+    background-position: 0 -308px;
+}
+.ns-item .ns-text {
+    display: block;
+    height: 13px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 13px;
+    color: #999;
+}
+
+footer {
+    display: none;
+}
+
+/* 广告 */
+#advertisement {
+    position: fixed;
+    left: 0; bottom: 0;
+    z-index: 99;
+    display: none;
+}
+#advertisement img {
+    width: 100%;
+}

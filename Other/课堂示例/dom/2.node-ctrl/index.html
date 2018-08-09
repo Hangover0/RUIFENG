@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>节点的操作</title>
+    <style>
+        html {
+            font: 20px sans-serif;
+        }
+        #start {
+            width: 72px;
+            padding: 6px 0;
+            background-color: #f3f3f3;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+        #start:active {
+            background-color: #d8d6d6;
+            border: 1px solid rgb(197, 194, 194);
+        }
+    </style>
+</head>
+<body>
+    <!-- 当点击“启动”按钮的时候 -->
+    <!-- 1、“状态：无” => “状态：启动中” -->
+    <!-- 2、class为second的div内的li元素的字体颜色变为红色 -->
+    <!-- 3、只能进行一次DOM查找操作（即只出现一次document） -->
+    <div class="first">
+        <ul>
+            <li id="start">启动</li>
+            <li>状态：无</li>
+        </ul>
+    </div>
+    <div class="second">
+        <ul>
+            <li>苹果</li>
+            <li>梨子</li>
+            <li>香蕉</li>
+            <li>草莓</li>
+        </ul>
+    </div>
+
+    <script>
+        var start = document.getElementById('start');
+        start.onclick = function() {
+            this.nextElementSibling.textContent = '状态：启动中...';
+            this.parentElement.parentElement.nextElementSibling.children[0].style.color = '#f00';
+        }
+    </script>
+</body>
+</html>

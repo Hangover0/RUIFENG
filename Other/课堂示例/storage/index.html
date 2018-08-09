@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试文件</title>
+</head>
+<body>
+    <h1>首页</h1>
+    <header></header>
+    <main>
+        <div class="description">
+            <p class="paragraph">
+                <a href="index.html">首页</a>
+                <a href="page/product.html">产品</a>
+                <a href="page/service.html">服务</a>
+                <a href="page/about.html">关于</a>
+            </p>
+        </div>
+        <button id="sign-in" type="button">登录</button>
+        <button id="sign-out" type="button">注销</button>
+    </main>
+    <footer></footer>
+    <script src="js/test.js"></script>
+    <script>
+        // 登录
+        var signIn = document.getElementById('sign-in');
+        signIn.onclick = function() {
+            sessionStorage.setItem('state', 'a34EH234EGHwegertre');
+            location.reload();
+        }
+
+        // 注销
+        var signOut = document.getElementById('sign-out');
+        signOut.onclick = function() {
+            sessionStorage.setItem('state', '');
+            location.reload();
+        }
+    </script>
+</body>
+</html>

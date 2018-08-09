@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>管理系统</title>
+    <link rel="stylesheet" href="./plugin/LHYAlertView.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<!--商品管理系统-->
+<div class="big">
+<div class="content">
+    <form action="#">
+        <fieldset>
+            <legend>商品管理系统</legend>
+            <button type="button" id="add">添加商品</button>
+            <table  cellspacing="0">
+                <thead id="thead">
+                    <tr>
+                        <td>序号</td>
+                        <td class="number">商品编号</td>
+                        <td>商品名称</td>
+                        <td>商品分类</td>
+                        <td>商品库存</td>
+                        <td>商品货价</td>
+                        <td>商品描述</td>
+                        <td class="operate">跟新时间</td>
+                        <td class="operate">操作</td>
+                    </tr>
+                </thead>
+                <!--表内容-->
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+</div>
+<!--遮罩-->
+<div id="mask">
+    <div class="mask_box">
+        <div class="sub">
+            <form action="#" id="goodForm">
+                <input type="text" placeholder="请输入商品编号" class="mask-input" id="num-ipt">
+                <input type="text" placeholder="请输入商品名称" class="mask-input" id="name-ipt">
+                <input type="text" placeholder="请输入商品分类" class="mask-input" id="type-ipt">
+                <input type="text" placeholder="请输入商品库存" class="mask-input" id="stock-ipt">
+                <input type="text" placeholder="请输入商品单价" class="mask-input" id="price-ipt">
+                <input type="text" placeholder="请输入商品描述" class="mask-input" id="des-ipt">
+                <button type="button" id="affirm">确认编辑</button>
+                <button type="button" id="close">关闭</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+<script src="plugin/LHYAlertView.js"></script>
+<script src="./js/data.js"></script>
+<script src="js/function.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

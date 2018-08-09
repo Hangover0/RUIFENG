@@ -1,0 +1,122 @@
+@charset "utf-8";
+html,body {
+    margin: 0;
+    height: 100%;
+    font: 13px arial,sans-serif;
+}
+body {
+    min-height: 420px;
+    overflow-y: auto;
+    position: relative;
+}
+#u1 {
+    z-index: 2;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 19px 0 5px 0;
+    padding: 0 96px 0 0;
+}
+#u1 a:link {
+    color: #666;
+    text-decoration: none;
+}
+#u1 a.mnav {
+    float: left;
+    color: #333;
+    font-weight: bold;
+    line-height: 24px;
+    margin-left: 20px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+#u1 a.bri {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+}
+
+main {
+    position: relative;
+    padding-bottom: 0;
+    height: 100%;
+    min-height: 600px;
+    text-align: center;
+}
+.s_form {
+    position: relative;
+    top: 42%;
+}
+.s_form .mobile-nav {
+    display: none;
+}
+#lg img:last-child {
+    display: none;
+}
+.s_form_wrapper {
+    position: relative;
+    top: -191px;
+}
+
+.user_input_search {
+    font-size: 0;
+    margin-top: 22px;
+}
+.user_input_search input, .user_input_search button {
+    padding: 8px;
+    height: 36px;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    vertical-align: middle;
+    outline: none;
+}
+.user_input_search input {
+    width: 540px;
+    border-color: #b6b6b6;
+    font-size: 16px;
+}
+.user_input_search button {
+    width: 100px;
+    background-color: #3385ff;
+    border-color: #3385ff;
+    font-size: 15px;
+    color: #ffffff;
+    cursor: pointer;
+}  
+
+footer {
+    height: 100px;
+    position: absolute;
+    bottom: 44px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 0;
+    overflow: hidden;
+}
+#ftConw a {
+    margin: 0 10px;
+}
+#cp a {
+    margin: 0 2px;
+    color: #666; 
+}
+
+/* 广告 */
+#advertisement {
+    display: none;
+}

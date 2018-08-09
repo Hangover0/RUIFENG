@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nextElementSibling使用</title>
+    <style>
+        button {
+            font: 20px sans-serif;
+            cursor: pointer;
+        }
+        .img-group {
+            display: none
+        }
+    </style>
+</head>
+<body>
+    <button id="showImg" type="button">显示</button>
+    <div class="img-group">
+        <img id="testImg" src="img/SnowGirl.jpg">
+    </div> 
+
+    <script>
+        var showImg = document.getElementById('showImg');
+        /* showImg.onclick = function() {
+            var imgGroup = document.querySelector('.img-group');
+            imgGroup.style.display = 'block';
+        } */
+        showImg.onclick = function() {
+           this.nextElementSibling.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

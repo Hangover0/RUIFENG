@@ -1,0 +1,59 @@
+@charset "utf-8";
+/**
+ * 功能：每周生活消费数据图表样式设置
+ * 日期：2017/4/7
+ **/
+
+/**************************************/
+/* 细节样式设置部分 */
+/**************************************/
+body {
+    background-color: #dddddd;
+    font: normal 16px "微软雅黑";
+    padding-bottom: 50px;
+}
+
+/**** 表格部分 ****/
+table.table {
+    min-width: 800px;
+}
+table.table thead, table.table tfoot {
+    background-color: #383838;
+    color: #ffffff;
+}
+table.table tbody {
+    background-color: #474747;
+    color: #e3e3e3;
+}
+table.table th {
+    font-weight: normal;
+}
+table.table tr td:focus {
+    background-color: #f3f3f3;
+    color: #333333;
+    outline: none;
+}
+
+/**** 图表部分 ****/
+.charts > div {
+    height: 320px;
+}
+
+/* 错误信息 */
+.erroMesg {
+    color: #f34c4c;
+    box-shadow: 0 0 10px #f34c4c;
+}
+.sumErro {
+    background-color: #f34c4c;
+    color: #ffffff;
+}
+
+/**************************************/
+/* 响应式设计部分 */
+/**************************************/
+@media (max-width: 800px) {
+    table.table tr > th, table.table tr > td {
+        padding: 4px;
+    }
+}

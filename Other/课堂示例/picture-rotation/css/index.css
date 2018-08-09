@@ -1,0 +1,12 @@
+@charset "utf-8";
+html,body {
+    margin: 0;
+    font: 16px sans-serif;
+}
+.img-group img {
+    width: 100%;
+    display: none;
+}
+.img-group img.show {
+    display: block;
+}

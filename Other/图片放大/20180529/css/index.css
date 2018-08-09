@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+#content {
+    width: 75%;
+    height: 500px;
+    margin: 0 auto;
+    min-width: 1200px;
+
+}
+
+
+.title {
+    font-size: 27px;
+    font-weight: lighter;
+}
+
+
+.addition {
+    width: 120px;
+    height: 35px;
+    color: #ffffff;
+    font-weight: lighter;
+    background: green;
+    border-radius: 5px;
+    margin: 25px 20px;
+    border: 0px;
+    outline: none;
+}
+
+
+.table {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+}
+
+.thead {
+    display: table-header-group;
+    background: #eee;
+    font-weight: bold;
+}
+
+.tr {
+    display: table-row;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.td {
+    display: table-cell;
+    border: 1px solid #d3d3d3;
+    padding: 8px 2px;
+}
+
+.tbody {
+    display: table-row-group;
+}
+.com {
+    color: #ffffff;
+    background: orange;
+    border-radius: 5px;
+    outline: none;
+    border: 0px;
+}
+.del {
+    outline: none;
+    color: #ffffff;
+    background: #ff4c1e;
+    border-radius: 5px;
+    border: 0px;
+}
+
+
+
+
+#mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+#mask .ct {
+    width: 300px;
+    background: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+#mask .form {
+    padding: 50px 30px;
+}
+#mask input{
+    display: block;
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    height: 35px;
+    padding-left: 8px;
+    text-align: center;
+    font-weight: lighter;
+}
+#mask input:focus {
+    border: none;
+    box-shadow: 0px 0px 6px 0px green inset;
+}
+#mask .add-edit-btn {
+    width: 100%;
+    height: 40px;
+    border: 0px;
+    outline: none;
+    background: green;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing:8px;
+    cursor: pointer;
+}
+#mask .closeBtn {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    border: 0 solid #000;
+    cursor: pointer;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+#mask .closeBtn:hover {
+    border-width: 1px;
+}
+#mask .closeBtn:before {
+    content: '';
+    display: inline-block;
+    width: 60%;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotateZ(45deg);
+}
+#mask .closeBtn:after {
+    content: '';
+    display: inline-block;
+    width: 60%;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotateZ(-45deg);
+}
+.mask-show {
+    display: flex !important;
+}

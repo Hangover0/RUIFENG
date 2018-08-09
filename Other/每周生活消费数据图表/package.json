@@ -1,0 +1,21 @@
+{
+  "name": "weekexpense",
+  "version": "1.0.0",
+  "description": "每周生活消费数据图表信息配置文件",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "npm install webpack jquery babel-cli babel-loader babel-preset-env babel-preset-stage-3 babel-runtime echarts --save-dev"
+  },
+  "author": "aulence",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "echarts": "^3.8.5",
+    "jquery": "^3.3.1",
+    "webpack": "^2.7.0"
+  }
+}

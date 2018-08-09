@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>用户注册验证</title>
+	<link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+	<header>
+		<div>用户注册</div>
+	</header>
+	
+	<form name="register">
+		<div>
+			<p class="erroMesg"></p>
+			<label>邮箱：</label>
+			<input id="email" type="email" placeholder="请输入邮箱">
+		</div>
+		<div>
+			<p class="erroMesg"></p>
+			<label>昵称：</label>
+			<input id="nickname" type="text" placeholder="请输入用户名">
+		</div>
+		<div>
+			<p class="erroMesg"></p>
+			<label>密码：</label>
+			<input id="pwd" type="password" maxlength="16" placeholder="请输入6~16位数密码">
+		</div>
+		<div>
+			<p class="erroMesg"></p>
+			<label>确认密码：</label>
+			<input id="repwd" type="password" maxlength="16" placeholder="再次输入密码">
+		</div>
+		<div>
+			<label>性别：</label>
+			<input id="male" name="gender" type="radio"><label for="male">男</label>
+			<input id="female" name="gender" type="radio"><label for="female">女</label>
+			<input id="secret" name="gender" type="radio" checked><label for="secret">保密</label>
+		</div>
+		<div>
+			<p class="erroMesg"></p>
+			<label>手机号：</label>
+			<input id="tel" type="tel" placeholder="请输入手机号">
+		</div>
+		<div>
+			<p class="erroMesg"></p>
+			<label>身份证号：</label>
+			<input id="idCard" type="text" placeholder="请输入18位身份证号">
+		</div>
+		<div>
+			<p class="erroMesg"></p>
+			<label>职业：</label>
+			<select id="profession">
+				<option value="无">请选择...</option>
+				<option value="政府职工">政府职工</option>
+				<option value="工程建筑">工程建筑</option>
+				<option value="金融">金融</option>
+				<option value="房地产">房地产</option>
+				<option value="互联网">互联网</option>
+				<option value="交通运输">交通运输</option>
+				<option value="服务行业">服务行业</option>
+				<option value="在校学生">在校学生</option>
+				<option value="其它">其它</option>
+			</select>
+		</div>
+		<div>
+			<p class="erroMesg"></p>
+			<label>个人主页：</label>
+			<input id="homepage" type="url" placeholder="如：http://www.xiaoluohao.com">
+		</div>
+		<div>
+			<label>自我介绍：</label>
+			<textarea id="describe" placeholder="面如冠玉、目如朗星、鼻若悬胆、唇若涂脂、长身玉立、风流倜傥..." maxlength="140"></textarea>
+		</div>
+		<div class="buttonGroup">
+			<button id="submit" type="button">注册</button>
+			<button type="reset">重置</button>
+		</div>
+	</form>
+	
+	<script src="js/register.js"></script>
+</body>
+</html>

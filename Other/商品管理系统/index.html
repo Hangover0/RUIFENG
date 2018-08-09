@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+  <fieldset id="content">
+      <legend class="title">商品管理系统</legend>
+      <button class="addition">添加商品</button>
+
+      <div class="table">
+          <div class="thead" id="thead">
+             <div class="tr">
+                 <div class="td">序号</div>
+                 <div class="td">商品编号</div>
+                 <div class="td">商品名称</div>
+                 <div class="td">商品分类</div>
+                 <div class="td">商品库存</div>
+                 <div class="td">商品售价</div>
+                 <div class="td">商品描述</div>
+                 <div class="td">更新时间</div>
+                 <div class="td">操作</div>
+             </div>
+          </div>
+          <div class="tbody" id="tbody">
+
+          </div>
+      </div>
+
+  </fieldset>
+
+
+  <!--遮罩-->
+  <div id="mask">
+      <div class="ct">
+          <form action="#" class="form" id="goodsForm">
+              <input type="text" placeholder="请输入商品编号" class="goods-input">
+              <input type="text" placeholder="请输入商品编号" class="goods-input">
+              <input type="text" placeholder="请输入商品编号" class="goods-input">
+              <input type="text" placeholder="请输入商品编号" class="goods-input">
+              <input type="text" placeholder="请输入商品编号" class="goods-input">
+              <input type="text" placeholder="请输入商品编号" class="goods-input">
+              <button class="add-edit-btn" id="add-edit-btn" type="button">确认添加</button>
+              <span class="closeBtn">X</span>
+          </form>
+      </div>
+  </div>
+
+
+
+  <script src="./js/functions.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
