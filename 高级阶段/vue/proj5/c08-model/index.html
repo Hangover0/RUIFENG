@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>c06-computed</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- 示例1 - 单选 -->
+      <form action="#">
+        <!-- v-model绑定的是value属性值 -->
+        <p>
+          <input type="text" value="Hello" v-model.trim="value"> 
+        </p> 
+        <!-- 如果加了v-model，就不需要绑定id和for，也不需要写name -->
+        <p>
+          性别：
+          <label for="female">男</label>
+          <input id="female" type="radio" value="男" name="gender" v-model="checkMsg"> 
+          <label for="male">女</label>
+          <input id="male" type="radio" value="女" name="gender" v-model="checkMsg"> 
+          <label for="secret">保密：</label>
+          <input id="secret"type="radio" value="保密" name="gender" v-model="checkMsg">
+        </p>
+        <p>你的选择是：{{checkMsg}}</p>
+      </form>
+      <!-- 示例2 - 多选-->
+      <!-- 多选是一个数组 -->
+      <form action="" name="myForm">
+          <p>下列英雄角色中定位为法师的是（多选）：</p>
+          <label>诸葛亮</label>
+          <input type="checkbox" value="诸葛亮" v-model="heros">
+          <label>露娜</label>
+          <input type="checkbox" value="露娜" v-model="heros">
+          <label>虞姬</label>
+          <input type="checkbox" value="虞姬" v-model="heros">
+          <label>貂蝉</label>
+          <input type="checkbox" value="貂蝉" v-model="heros">
+          <label>吕布</label>
+          <input type="checkbox" value="吕布" v-model="heros">
+          <p>您的选择是：{{ heros }}</p>
+      </form>
+      <!-- 示例3 - 下拉列表-->
+      <form action="" name="myForm">
+          <select name="mySel" v-model="selected">
+              <option value="">-请选择您所在的城市-</option>
+              <option value="成都">成都</option>
+              <option value="上海">上海</option>
+              <option value="北京">北京</option>
+              <option value="深圳">深圳</option>
+              <option value="杭州">杭州</option>
+              <option value="昆明">昆明</option>
+          </select>
+      </form>
+      <p>您所在的城市是：{{ selected }}</p>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

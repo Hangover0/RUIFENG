@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>c06-computed</title>
+  </head>
+  <body>
+    <div id="app">
+      <button type="button" @click="get">get</button>
+      <button type="button" @click="post">post</button>
+
+      <ul>
+        <li v-for="(content, index) in contentlist" :key="index">
+          <p>{{content.ct}}</p>
+          <p>{{content.title}}</p>
+          <img :src="content.img" alt="" width="300">
+        </li>
+
+      </ul>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

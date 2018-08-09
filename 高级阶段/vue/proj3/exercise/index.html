@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>exercise</title>
+  </head>
+  <body>
+    <div id="app">
+      <p>姓名：{{name}}</p>
+      <p v-text="'年龄：' + age"></p>
+      <template>
+        <p>性别：{{gender}}</p>
+      </template>
+      <template>
+        <p>爱好：<span v-html="hobby"></span></p>
+      </template> 
+      <p>
+        <button type="button" @click="isHidden = !isHidden">显示/隐藏</button>
+      </p>
+      <p v-if='!isHidden'>{{signature}}</p>
+      <img :src="headimg" :title="imgTitle" :class="{'hidden':isHidden}">
+      <div>
+        <textarea name="" id="" cols="30" rows="10" v-model='message' style="font-size: 20px;font-family:'微软雅黑'"></textarea>
+        <p v-text="message"></p>
+      </div>
+    </div>
+
+
+
+
+    <!-- built files will be auto injected -->
+  </body>
+</html>

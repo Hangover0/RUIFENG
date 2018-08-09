@@ -1,0 +1,10 @@
+@charset "utf-8";
+.error{
+    display: block;
+}
+.showTips{
+
+}
+#app form p{
+    color: red;
+}

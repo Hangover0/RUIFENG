@@ -1,0 +1,66 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style: none;
+}
+#app{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.myform{
+    width: 50%;
+    margin: 0 auto;
+}
+.myform fieldset{
+    border-radius: 5px;
+    padding: 20px;
+}
+.myform fieldset legend{
+    margin-left: 100px;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.myform fieldset p{
+    margin: 15px 0px; 
+}
+.myform fieldset p label{
+    font-family: "微软雅黑";
+    font-size: 15px;
+    color: #666666;
+}
+.myform fieldset p input{
+    width: 220px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #cccccc;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.myform fieldset p button{
+    margin-left: 150px;
+    background: orange;
+    padding: 5px 10px;
+    border: 0px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.myform .hero-list{
+    text-align: center;
+    width: 460px;
+    border: 1px solid #cccccc;
+}
+.myform .hero-list li{
+    border-bottom: 1px solid #eeeeee;
+}
+.myform .hero-list li p{
+    display: inline-block;
+    width: 18%;
+}
+.myform .hero-list li:nth-child(odd){
+    background: rgb(237, 237, 237);
+}

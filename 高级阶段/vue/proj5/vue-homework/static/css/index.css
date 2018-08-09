@@ -1,0 +1,71 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style: none;
+}
+body{
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #eeeeee;
+}
+#app{
+    padding: 10px;
+}
+.book{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.book li{
+    width: 47%;
+    margin-bottom: 20px;
+}
+.book li img{
+    vertical-align: middle;
+    width: 135px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.book .name{
+    color: #666666;
+    font-size: 12px;
+    height: 45px;
+}
+.book .price{
+    color: red;
+    line-height: 30px;
+}
+.book .bookNum{
+    font-size: 12px;
+    color: #333333;
+    line-height: 20px;
+}
+.book .info{
+    width: 100%;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #666666;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.ghost img{
+    width: 100%;
+}
+.ghost .title{
+    line-height: 40px;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    color: #666666;
+}
+.ghost .desc{
+    font-size: 14px;
+    color: #999999;
+    font-family: "微软雅黑";
+    line-height: 25px;
+    margin-bottom: 20px;
+}

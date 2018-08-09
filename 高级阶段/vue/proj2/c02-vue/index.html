@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>c02-vue</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- 文本插值 -->
+      <p>时间：{{time}}</p>
+      <p v-text="'地址：' + address"></p>
+      <!-- template并不会被渲染出来 -->
+      <template>
+        <p>天气：{{weather}}</p>
+      </template>
+      <!-- v-html(不能在template标签写，因为template不会被渲染出来) -->
+      <div v-html="htmlStr"></div>
+      <p>
+        <!-- v-on:type 绑定事件 -->
+        <button type="button" @click='isHidden = !isHidden'>显示/隐藏</button>
+      </p>
+      <!-- v-if:条件渲染 -->
+      <h3 v-if="!isHidden">柠檬不萌</h3>
+      <!-- v-bind -> 缩写为（:）-->
+      <img :src="imgStr" alt="" :title="imgTitle" :class="{'hidden':isHidden}"> 
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

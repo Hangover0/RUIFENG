@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>c03-render</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- 示例1 -->
+      <form action="#">
+        <button type="button" @click="isLogin=!isLogin">登录/注册</button>
+        <div class="pages">
+          <!-- 登录 -->
+          <div v-show="isLogin">
+            <p><input type="text" placeholder="请输入账号"></p>
+            <p><input type="text" placeholder="请输入密码"></p>
+            <button type="button">登录</button>
+          </div>
+          <!-- 注册 -->
+          <div v-show="!isLogin">
+            <p><input type="text" placeholder="请输入账号"></p>
+            <p><input type="text" placeholder="请输入密码"></p>
+            <button type="button">注册</button>
+          </div>
+        </div>       
+      </form>
+      <!-- 示例2 -->
+      <div style="margin-top: 100px;">
+        <template v-if="loginType=='tel'">
+          <span>手机：</span>
+          <input type="tel" placeholder="请输入手机号" key="tel-input">
+        </template>
+        <template v-else>
+          <span>邮箱：</span>
+          <input type="email" placeholder="请输入邮箱" key="email-input">
+        </template>
+        <p>
+          <button type="button" @click="toggleLoginType">登录/注册</button>
+        </p>   
+      </div>
+
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

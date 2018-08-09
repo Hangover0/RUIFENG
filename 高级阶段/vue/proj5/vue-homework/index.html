@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>c06-computed</title>
+  </head>
+  <body>
+    <div id="app">
+      <ul class="book">
+        <li v-for="(content, index) in contentlist" :key="index">
+          <img :src="content.cover" alt="" width="300">
+          <p class="name">{{content.name}}</p>
+          <p class="price">{{content.price | addSymble}}</p>
+          <p class="bookNum">编号：{{content.bookNum}}</p>
+          <p class="info" :title="content.info1">{{content.info1}}</p>    
+        </li>
+      </ul>
+      <ul class="ghost">
+        <li v-for="(ghostlist, index) in ghostlists" :key="index">
+          <img :src="ghostlist.img" alt="">
+          <p class="title">{{ghostlist.title}}</p>
+          <p class="desc">{{ghostlist.desc}}</p>
+        </li>
+      </ul>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

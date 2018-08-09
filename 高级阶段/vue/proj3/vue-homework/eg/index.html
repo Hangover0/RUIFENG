@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>eg</title>
+  </head>
+  <body>
+    <div id="app">
+      <template>
+        <form action="#" class="myform">
+          <fieldset>
+            <legend>王者农药英雄资料</legend>
+            <p>
+              <label for="">英雄名字：</label>
+              <input type="text" v-model="hero.name">
+            </p>
+            <p>
+              <label for="">英雄定位：</label>
+              <input type="text" v-model="hero.location">
+            </p>
+            <p>
+              <label for="">英雄定位：</label>
+              <input type="text" v-model="hero.skill">
+            </p>
+            <p>
+              <label for="">英雄定位：</label>
+              <input type="text" v-model="hero.orientation">
+            </p>
+            <p>
+              <label for="">英雄搜索：</label>
+              <input type="text" v-model="keywords">
+            </p>
+            <p>
+              <button type="button" @click="add">创建角色</button>
+            </p>
+            <ul class="hero-list">
+              <li>
+                <div>
+                  <p>名字</p>
+                  <p>定位</p>
+                  <p>技能</p>
+                  <p>方位</p>
+                  <p>操作</p>
+                </div>       
+              </li>
+              <li v-for="(hero, index) in filterArr()" :key="index" :data-index="index">
+                <div>
+                  <p>{{hero.name}}</p>
+                  <p>{{hero.location}}</p>
+                  <p>{{hero.skill}}</p>
+                  <p>{{hero.orientation}}</p>
+                  <p>
+                    <span @click="modifi">修改</span>
+                    <span @click="remove">删除</span>
+                  </p>
+                </div>     
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </template>     
+    </div>
+    <!-- built files will be auto injected --> 
+  </body>
+</html>

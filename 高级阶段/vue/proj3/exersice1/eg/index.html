@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>eg</title>
+  </head>
+  <body>
+    <div id="app">
+      <form action="#">
+        <input type="text" :class="{error:error}" v-model="username" placeholder="请输入用户名">
+    <p v-if="showTips">只能输入字母、数字以及下划线</p>
+      </form>
+    </div>
+    <!-- built files will be auto injected --> 
+  </body>
+</html>

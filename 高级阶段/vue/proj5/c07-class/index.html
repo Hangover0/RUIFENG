@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>c06-computed</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- 变量的形式 -->
+      <div :class="className"></div>
+      <!-- 是否设置classname = 'box' -->
+      <!-- 取决于"isBox"的值 -->
+      <!-- 如果'isBox'的值为true，则添加 -->
+      <!-- 否则则不添加 -->
+      <div :class="{'box':isBox}"></div>
+      <!-- 对象的形式 -->
+      <div :class="classObj"></div>
+      <!-- 数组的形式 -->
+      <div :class="[class1, class2]"></div>
+      <div :class="className" :style="{borderRadius:'50%',background:'red'}"></div>
+      <div :class="className" :style="{borderRadius:radius,background:bgColor}"></div>
+      <div :class="className" :style="styleObj"></div>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

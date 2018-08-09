@@ -1,0 +1,32 @@
+@charset 'utf-8';
+.ct-list{
+    box-sizing: border-box;
+    padding: 8px;
+}
+.ct-list li{
+    padding: 8px 0px;
+    margin: 8px 0px;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ct-list .left-box{
+    width: 30%;
+}
+.left-box img{
+    width: 100%;
+    border-radius: 5px;
+    border-top: 1px solid #cccccc;
+}
+.right-box{
+    width: 66%;
+}
+.title{
+    font-weight: bold;
+    font-size: 15px;
+}
+.tel{
+    color: rgb(199, 27, 10);
+    margin-bottom: 6px;
+}
