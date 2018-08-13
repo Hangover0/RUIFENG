@@ -1,0 +1,6 @@
+<view class='container'>
+  <view wx:for="{{contentlist}}" wx:for-index='idx' wx:for-item='joke' wx:key='{{joke.id}}'>
+    <image src='{{joke.img}}'></image>
+    <text>{{joke.desc}}</text>
+  </view>
+</view>

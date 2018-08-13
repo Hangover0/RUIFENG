@@ -1,0 +1,30 @@
+/* pages/login/login.wxss */
+image{
+  margin-top: 50rpx;
+  width: 100%;
+}
+.input{
+  border-bottom: 1px solid #cccccc;
+  height: 45px;
+  width: 85%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 100rpx;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  font-size: 28rpx;
+  position: relative;
+}
+.input image{
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: -15px;
+  left: 15px;
+}
+button{
+  margin: 60rpx auto;
+  width: 85%;
+  background: rgb(199, 27, 10);
+  color: #fff;
+}

@@ -1,0 +1,10 @@
+<image src='../../images/logo.png'></image>
+<form>
+  <input bindinput='handleInput' type='text' class='input' id='username' placeholder='请输入账号'>
+    <image src='../../images/username.png' mode='aspectFit'></image>
+  </input>
+  <input bindinput='handleInput' type='password' class='input' id='password' placeholder='请输入密码'>
+    <image src='../../images/password.png' mode='aspectFit'></image>
+  </input>
+  <button type='button' bindtap='btnLogin'>登录</button>
+</form>

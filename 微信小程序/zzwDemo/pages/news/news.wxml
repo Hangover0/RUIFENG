@@ -1,0 +1,4 @@
+<!--pages/news/news.wxml-->
+<text>你关注的都在这里！</text>
+<view>{{msg}}</view>
+<button bindtap='btnclick'>点击有惊喜！</button>
